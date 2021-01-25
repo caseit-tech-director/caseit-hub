@@ -17,6 +17,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
+    "tawkto-react": "^1.0.11",
     "tsutils": "^3.20.0"
   },
   "devDependencies": {
