@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React from "react"
 import { Link } from "gatsby"
 
 
@@ -7,12 +7,6 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 
 function IndexPage () {
-  const tawkTo = require("tawkto-react");
-  const tawkToPropertyId = '600f2303a9a34e36b9702f83'
-  
-  useEffect(() => {
-      tawkTo(tawkToPropertyId)
-  }, [])
   return (
     <Layout>
       <SEO title="Home" />
