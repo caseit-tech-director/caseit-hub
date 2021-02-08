@@ -48,15 +48,15 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    // {
-    //   resolve: `gatsby-plugin-alias-imports`,
-    //   options: {
-    //     alias: {
-    //       "@components": path.resolve(__dirname, "src/components"),
-    //       "@styles": path.resolve(__dirname, "src/styles"),
-    //     },
-    //     extensions: ["js", "scss", "mdx"],
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@components": path.resolve(__dirname, "src/components"),
+          "@styles": path.resolve(__dirname, "src/styles"),
+        },
+        extensions: ["js", "scss", "mdx"],
+      },
+    },
   ],
 };
