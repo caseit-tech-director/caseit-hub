@@ -60,8 +60,15 @@ const Navigation = () => {
     <nav className="nav">
       <AnimateSharedLayout>
         {navMenu.map((group, groupIndex) => {
+          const groupContainCurrent = group.content.find(
+            ({ sectionId }) => sectionId === currentSection
+          );
           return (
-            <NavGroup label={group.groupLabel} key={groupIndex}>
+            <NavGroup
+              label={group.groupLabel}
+              key={groupIndex}
+              forceExpand={groupContainCurrent}
+            >
               {group.content.map((item, index) => {
                 return (
                   <NavItem
