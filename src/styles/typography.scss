@@ -1,61 +1,128 @@
-.body{
-    font-family: DINPro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;    
+@import "./responsive.scss";
+
+$mobile-typography-breakpoint: $breakpoint-s;
+
+p,
+.body {
+  font-family: DINPro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
 }
 
-.small{
-    font-family: DINPro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
+.small {
+  font-family: DINPro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.h1{
-    font-family: DINPro;
-    font-style: normal;
-    font-weight: normal;
+.display {
+  font-family: DINPro;
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.03em;
+  @include viewportLargerThan($mobile-typography-breakpoint) {
+    font-size: 96px;
+    line-height: 112px;
+    letter-spacing: -0.02em;
+  }
+}
+
+h1,
+.h1 {
+  font-family: DINPro;
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.03em;
+  @include viewportLargerThan($mobile-typography-breakpoint) {
     font-size: 72px;
     line-height: 88px;
     letter-spacing: -0.015em;
+  }
 }
 
-.h2{
-    font-family: DINPro;
-    font-style: normal;
-    font-weight: normal;
+h2,
+.h2 {
+  font-family: DINPro;
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  @include viewportLargerThan($mobile-typography-breakpoint) {
     font-size: 48px;
     line-height: 64px;
     letter-spacing: -0.005em;
+  }
 }
 
-.h3{
-    font-family: DINPro;
-    font-style: normal;
-    font-weight: normal;
+h3,
+.h3 {
+  font-family: DINPro;
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 24px;
+  line-height: 32px;
+  @include viewportLargerThan($mobile-typography-breakpoint) {
     font-size: 36px;
     line-height: 48px;
-    letter-spacing: -0.005em;
+  }
+  letter-spacing: -0.005em;
 }
 
-.h4{
-    font-family: DINPro;
-    font-style: normal;
-    font-weight: bold;
+h4,
+.h4 {
+  font-family: DINPro;
+  font-style: normal;
+  font-weight: bold;
+
+  font-size: 20px;
+  line-height: 28px;
+  @include viewportLargerThan($mobile-typography-breakpoint) {
     font-size: 24px;
     line-height: 32px;
-    letter-spacing: 0.01em;
+  }
+  letter-spacing: 0.01em;
 }
 
-.lead{
-    font-family: DINPro;
-    font-style: normal;
-    font-weight: normal;
+h5,
+.h5 {
+  font-family: DINPro;
+  font-style: normal;
+  font-weight: bold;
+
+  font-size: 16px;
+  line-height: 22px;
+  @include viewportLargerThan($mobile-typography-breakpoint) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  letter-spacing: 0.01em;
+}
+
+.lead {
+  font-family: DINPro;
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 22px;
+  line-height: 28px;
+  @include viewportLargerThan($mobile-typography-breakpoint) {
     font-size: 24px;
     line-height: 32px;
-    letter-spacing: -0.0025em;
-}
+  }
 
+  letter-spacing: -0.0025em;
+}
