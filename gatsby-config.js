@@ -1,10 +1,13 @@
+const path = require("path");
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `CaseIT Hub`,
+    description: `Information center for CaseIT 2021 competition week.`,
+    author: `CaseIT 2021`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -45,5 +48,15 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    // {
+    //   resolve: `gatsby-plugin-alias-imports`,
+    //   options: {
+    //     alias: {
+    //       "@components": path.resolve(__dirname, "src/components"),
+    //       "@styles": path.resolve(__dirname, "src/styles"),
+    //     },
+    //     extensions: ["js", "scss", "mdx"],
+    //   },
+    // },
   ],
-}
+};
