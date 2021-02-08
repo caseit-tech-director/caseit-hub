@@ -67,7 +67,7 @@ const Navigation = () => {
             <NavGroup
               label={group.groupLabel}
               key={groupIndex}
-              forceExpand={groupContainCurrent}
+              expandedInitially={groupContainCurrent}
             >
               {group.content.map((item, index) => {
                 return (

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const NavGroup = ({ children, label, forceExpand }) => {
-  const [isExpanded, setIsExpanded] = useState(forceExpand);
+const NavGroup = ({ children, label, expandedInitially }) => {
+  const [isExpanded, setIsExpanded] = useState(expandedInitially);
   return (
     <div className="nav-group">
       <button
@@ -16,13 +16,13 @@ const NavGroup = ({ children, label, forceExpand }) => {
       <motion.div
         className="nav-group__content"
         animate={{
-          height: isExpanded || forceExpand ? "auto" : "0rem",
-          overflowY: isExpanded || forceExpand ? "visible" : "hidden",
+          height: isExpanded ? "auto" : "0rem",
+          overflowY: isExpanded ? "visible" : "hidden",
         }}
         // set the initial condition
         initial={{
-          height: isExpanded || forceExpand ? "auto" : "0rem",
-          overflowY: isExpanded || forceExpand ? "visible" : "hidden",
+          height: isExpanded ? "auto" : "0rem",
+          overflowY: isExpanded ? "visible" : "hidden",
         }}
       >
         {children}
