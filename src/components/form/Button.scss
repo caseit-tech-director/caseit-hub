@@ -1,0 +1,30 @@
+@import "@styles/layout.scss";
+
+.button-primary {
+  // layout
+  display: inline-block;
+  padding: $spacing-unit;
+
+  // colours
+  color: var(--clr-interactive-text);
+  background-color: var(--clr-interactive-bg);
+
+  // shadows
+  box-shadow: var(--drop-shadow-button);
+
+  // typography
+  font-family: "DINPro";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  // behaviour
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
