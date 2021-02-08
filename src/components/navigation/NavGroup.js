@@ -19,6 +19,11 @@ const NavGroup = ({ children, label, forceExpand }) => {
           height: isExpanded || forceExpand ? "auto" : "0rem",
           overflowY: isExpanded || forceExpand ? "visible" : "hidden",
         }}
+        // set the initial condition
+        initial={{
+          height: isExpanded || forceExpand ? "auto" : "0rem",
+          overflowY: isExpanded || forceExpand ? "visible" : "hidden",
+        }}
       >
         {children}
       </motion.div>
