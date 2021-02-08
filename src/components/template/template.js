@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {graphql} from 'gatsby';
 
 
 const index = () => {
@@ -9,3 +10,4 @@ const index = () => {
     )
 }
 export default index;
+
