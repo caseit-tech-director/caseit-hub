@@ -11,8 +11,11 @@
   --clr-primary-darker: rgb(37, 34, 34);
   --clr-primary-darkest: rgb(0, 0, 0);
 
-  --clr-interactive-text: var(--clr-primary-lightest);
-  --clr-interactive-bg: var(--clr-primary-darkest);
+  --clr-interactive-text: var(--clr-primary-dark);
+  --clr-interactive-bg: var(--clr-primary-lightest);
+  --clr-interactive-text--inverted: var(--clr-primary-lightest);
+  --clr-interactive-bg--inverted: var(--clr-primary-darkest);
+  --clr-interactive-bg--hover: rgba(127, 127, 127, 0.1);
 
   --drop-shadow-dark: 0px 15px 25px rgba(0, 0, 0, 0.25);
   --drop-shadow-light: 0px 15px 25px rgba(0, 0, 0, 0.1);

@@ -6,8 +6,8 @@
   padding: $spacing-unit;
 
   // colours
-  color: var(--clr-interactive-text);
-  background-color: var(--clr-interactive-bg);
+  color: var(--clr-interactive-text--inverted);
+  background-color: var(--clr-interactive-bg--inverted);
 
   // shadows
   box-shadow: var(--drop-shadow-button);
