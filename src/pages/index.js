@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../components/form/Button";
-import Chair from "../components/chairWelcome/chair";
+import Chair from "../components/chairWelcome/Chair";
 
 import "@styles/main.scss";
 import WelcomePopup from "@components/welcomePopup/";
