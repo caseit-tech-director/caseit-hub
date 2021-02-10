@@ -2,6 +2,7 @@ import React from "react";
 import Chair from "../components/chairWelcome/Chair";
 import Navigation from "../components/navigation";
 import SectionMarker from "../components/navigation/SectionMarker";
+import Letters from "../components/letters/Letters";
 
 import "@styles/main.scss";
 import WelcomePopup from "@components/welcomePopup/";
@@ -23,10 +24,7 @@ const Home = () => {
             <SectionMarker label="test2" hash="test2" group="Test Group">
               <div>test</div>
             </SectionMarker>
-            <Chair />
-            <Chair />
-            <Chair />
-            <Chair />
+            <Letters/>
             <Chair />
             <SectionMarker label="fdsa" hash="fdsafdsa" group="Test Group 2">
               <div>test</div>
