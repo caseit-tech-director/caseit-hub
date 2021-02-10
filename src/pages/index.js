@@ -13,6 +13,11 @@ const Home = () => {
           <Navigation />
         </div>
         <div className="main-grid__content">
+          {/* dummy content for now */}
+          <Chair />
+          <Chair />
+          <Chair />
+          <Chair />
           <Chair />
         </div>
       </div>
