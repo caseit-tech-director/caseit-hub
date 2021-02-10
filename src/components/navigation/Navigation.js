@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AnimateSharedLayout } from "framer-motion";
+import { useNavMenu } from "./NavigationContext";
 
 import "./Navigation.scss";
 import NavItem from "./NavItem";
@@ -7,45 +8,63 @@ import NavGroup from "./NavGroup";
 
 const Navigation = () => {
   //TODO: the navigation structure will ideally automatically generated automatically
-  const navMenu = [
-    {
-      groupLabel: "test link group 1",
-      content: [
-        {
-          label: "Test Link 1",
-          sectionId: "testLink1",
-        },
-        {
-          label: "Test Link 2",
-          sectionId: "testLink2",
-        },
-        {
-          label: "Test Link 3",
-          sectionId: "testLink3",
-        },
-      ],
-    },
-    {
-      groupLabel: "test link group 2",
-      content: [
-        {
-          label: "Test Link 4",
-          sectionId: "testLink4",
-        },
-        {
-          label: "Test Link 5",
-          sectionId: "testLink5",
-        },
-        {
-          label: "Test Link 6",
-          sectionId: "testLink6",
-        },
-      ],
-    },
-  ];
+  // const navMenu = [
+  //   {
+  //     groupLabel: "test link group 1",
+  //     content: [
+  //       {
+  //         label: "Test Link 1",
+  //         sectionId: "testLink1",
+  //       },
+  //       {
+  //         label: "Test Link 2",
+  //         sectionId: "testLink2",
+  //       },
+  //       {
+  //         label: "Test Link 3",
+  //         sectionId: "testLink3",
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     groupLabel: "test link group 2",
+  //     content: [
+  //       {
+  //         label: "Test Link 4",
+  //         sectionId: "testLink4",
+  //       },
+  //       {
+  //         label: "Test Link 5",
+  //         sectionId: "testLink5",
+  //       },
+  //       {
+  //         label: "Test Link 6",
+  //         sectionId: "testLink6",
+  //       },
+  //     ],
+  //   },
+  // ];
+
+  const [navMenu] = useNavMenu();
 
   // the nav bar will update itself base on the location hash
   const [currentSection, setCurrentSection] = useState(getLocationHash());
+  const [currentGroup, setCurrentGroup] = useState();
+
+  useEffect(() => {
+    if (!navMenu) return;
+    let initialGroup;
+    // alert(Object[0]);
+    Object.values(navMenu).forEach((group) => {
+      const groupContainCurrent = group.content.find(
+        ({ sectionId }) => sectionId === currentSection
+      );
+      if (groupContainCurrent) initialGroup = group.groupLabel;
+    });
+
+    setCurrentGroup(initialGroup);
+  }, [navMenu.length]); // only update when the nav menu is changed
+
   useEffect(() => {
     const handleHashChange = () => {
       setCurrentSection(getLocationHash());
@@ -67,7 +86,11 @@ const Navigation = () => {
             <NavGroup
               label={group.groupLabel}
               key={groupIndex}
-              expandedInitially={groupContainCurrent}
+              onToggleExpandState={() => {
+                if (currentGroup !== group.groupLabel)
+                  setCurrentGroup(group.groupLabel);
+              }}
+              isExpanded={currentGroup === group.groupLabel}
             >
               {group.content.map((item, index) => {
                 return (

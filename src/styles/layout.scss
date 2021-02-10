@@ -48,9 +48,36 @@ p {
 //   margin-bottom: $spacing-m;
 // }
 
+$content-begin-flow-line: 20vh;
+$grid-breakpoint: $breakpoint-m;
+
 .main-grid {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "nav content";
+  grid-gap: 16px;
+
+  @include viewportLargerThan($grid-breakpoint) {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav content";
+  }
+
+  &__nav {
+    grid-area: nav;
+
+    position: sticky;
+    top: 0;
+    max-height: 100vh;
+
+    // push it down a little bit
+    padding-top: $content-begin-flow-line;
+
+    @include viewportSmallerThan($grid-breakpoint) {
+      display: none;
+    }
+  }
+  &__content {
+    grid-area: content;
+    // push it down a little bit
+    padding-top: $content-begin-flow-line;
+  }
 }
