@@ -55,7 +55,9 @@ const item = {
 };
 
 const WelcomePopup = ({ children }) => {
-  const queryString = window.location.search;
+  const queryString = (() => {
+    if (typeof window !== "undefined") return window.location.search;
+  })();
   const universityCode = new URLSearchParams(queryString).get("uni");
 
   const universityName = UNIVERSITY_DICTIONARY[universityCode];
