@@ -39,9 +39,6 @@ const Welcome = () => {
         <br></br>
             Jordan
         </p>
-        <h1 className="display">
-            Dean's Welcome
-        </h1>
         </main>
     )
 }
