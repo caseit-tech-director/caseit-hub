@@ -88,7 +88,7 @@ const Navigation = () => {
 };
 
 function getLocationHash() {
-  return window.location.hash.split("#")[1];
+  if (typeof window !== "undefined") return window.location.hash.split("#")[1];
 }
 
 export default Navigation;
