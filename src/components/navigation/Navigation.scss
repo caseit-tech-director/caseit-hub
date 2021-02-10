@@ -2,7 +2,18 @@
 
 $accent-strip-size: 2px;
 
+.nav-container {
+  grid-area: nav;
+  display: block;
+  overflow: visible;
+  height: 70vh;
+}
+
 .nav {
+  position: sticky;
+  top: 0px;
+  height: 100vh;
+
   display: flex;
   flex-direction: column;
 }

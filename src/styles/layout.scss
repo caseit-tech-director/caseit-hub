@@ -23,6 +23,8 @@ $spacing-xs: $spacing-unit * 0.5;
 $center-column-width: 1200px;
 $center-column-margin: $spacing-s;
 .center-column {
+  overflow: visible;
+
   margin-left: $center-column-margin;
   margin-right: $center-column-margin;
 
@@ -47,3 +49,10 @@ p {
 // .lead {
 //   margin-bottom: $spacing-m;
 // }
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "nav content";
+}

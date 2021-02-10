@@ -57,33 +57,35 @@ const Navigation = () => {
   }, []);
 
   return (
-    <nav className="nav">
-      <AnimateSharedLayout>
-        {navMenu.map((group, groupIndex) => {
-          const groupContainCurrent = group.content.find(
-            ({ sectionId }) => sectionId === currentSection
-          );
-          return (
-            <NavGroup
-              label={group.groupLabel}
-              key={groupIndex}
-              expandedInitially={groupContainCurrent}
-            >
-              {group.content.map((item, index) => {
-                return (
-                  <NavItem
-                    isCurrent={currentSection === item.sectionId}
-                    sectionId={item.sectionId}
-                    label={item.label}
-                    key={index}
-                  />
-                );
-              })}
-            </NavGroup>
-          );
-        })}
-      </AnimateSharedLayout>
-    </nav>
+    <div className="nav-container">
+      <nav className="nav">
+        <AnimateSharedLayout>
+          {navMenu.map((group, groupIndex) => {
+            const groupContainCurrent = group.content.find(
+              ({ sectionId }) => sectionId === currentSection
+            );
+            return (
+              <NavGroup
+                label={group.groupLabel}
+                key={groupIndex}
+                expandedInitially={groupContainCurrent}
+              >
+                {group.content.map((item, index) => {
+                  return (
+                    <NavItem
+                      isCurrent={currentSection === item.sectionId}
+                      sectionId={item.sectionId}
+                      label={item.label}
+                      key={index}
+                    />
+                  );
+                })}
+              </NavGroup>
+            );
+          })}
+        </AnimateSharedLayout>
+      </nav>
+    </div>
   );
 };
 
