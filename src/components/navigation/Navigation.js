@@ -49,6 +49,8 @@ const Navigation = () => {
 
   // the nav bar will update itself base on the location hash
   const [currentSection, setCurrentSection] = useState(getLocationHash());
+  const [currentGroup, setCurrentGroup] = useState("");
+
   useEffect(() => {
     const handleHashChange = () => {
       setCurrentSection(getLocationHash());
@@ -77,7 +79,11 @@ const Navigation = () => {
             <NavGroup
               label={group.groupLabel}
               key={groupIndex}
-              expandedInitially={groupContainCurrent}
+              onToggleExpandState={() => {
+                if (currentGroup !== group.groupLabel)
+                  setCurrentGroup(group.groupLabel);
+              }}
+              isExpanded={currentGroup === group.groupLabel}
             >
               {group.content.map((item, index) => {
                 return (

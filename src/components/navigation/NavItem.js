@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
+import AnimationConfig from "../AnimationConfig";
 
 import "./Navigation.scss";
 
@@ -11,6 +12,10 @@ const NavItem = ({ isCurrent, label, sectionId, ...props }) => {
         <motion.div
           layoutId="nav-item__current"
           className="nav-item__current"
+          transition={{
+            ease: AnimationConfig.EASING,
+            duration: AnimationConfig.FAST,
+          }}
         ></motion.div>
       )}
       {label}
