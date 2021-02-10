@@ -15,6 +15,9 @@ $accent-strip-size: 2px;
 .nav-group {
   display: flex;
   flex-direction: column;
+  width:15%;
+  left: 0;
+  height:100%;
 
   &__toggle {
     @extend .nav-item;
@@ -44,6 +47,7 @@ $accent-strip-size: 2px;
   display: block;
   padding: $spacing-xs;
   position: relative;
+  width:150;
 
   // for sub group indentation
   padding-left: $spacing-s;

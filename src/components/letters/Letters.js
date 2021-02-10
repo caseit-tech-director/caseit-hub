@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import "@styles/main.scss";
+import "@components/chairWelcome/@styles/main.scss";
 
 const letters = () => {
     return(
