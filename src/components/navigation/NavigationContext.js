@@ -30,7 +30,6 @@ const NavigationContextProvider = ({ children }) => {
   const forceUpdate = useForceUpdate();
 
   const registerSection = ({ label, group, hash }) => {
-    console.log(navMenu.current);
     const targetGroupIndex = navMenu.current.findIndex((currentGroup) => {
       return currentGroup.groupLabel === group;
     });

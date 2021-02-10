@@ -49,7 +49,21 @@ const Navigation = () => {
 
   // the nav bar will update itself base on the location hash
   const [currentSection, setCurrentSection] = useState(getLocationHash());
-  const [currentGroup, setCurrentGroup] = useState("");
+  const [currentGroup, setCurrentGroup] = useState();
+
+  useEffect(() => {
+    if (!navMenu) return;
+    let initialGroup;
+    // alert(Object[0]);
+    Object.values(navMenu).forEach((group) => {
+      const groupContainCurrent = group.content.find(
+        ({ sectionId }) => sectionId === currentSection
+      );
+      if (groupContainCurrent) initialGroup = group.groupLabel;
+    });
+
+    setCurrentGroup(initialGroup);
+  }, [navMenu.length]); // only update when the nav menu is changed
 
   useEffect(() => {
     const handleHashChange = () => {
