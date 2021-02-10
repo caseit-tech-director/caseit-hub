@@ -29,6 +29,10 @@ $accent-strip-size: 2px;
 
     // remove the indentation
     padding-left: 0rem !important;
+
+    &:focus {
+      outline: none;
+    }
   }
   &__content {
     display: flex;
