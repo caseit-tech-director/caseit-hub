@@ -3,6 +3,9 @@ import Chair from "../components/chairWelcome/Chair";
 import Navigation from "../components/navigation";
 import SectionMarker from "../components/navigation/SectionMarker";
 import Letters from "../components/letters/Letters";
+import About from "../components/about/About";
+import Overview from "../components/overview/Overview";
+import Structure from "../components/structure/Structure";
 
 import "@styles/main.scss";
 import WelcomePopup from "@components/welcomePopup/";
@@ -26,6 +29,9 @@ const Home = () => {
             </SectionMarker>
             <Letters/>
             <Chair />
+            <About/>
+            <Overview/>
+            <Structure/>
             <SectionMarker label="fdsa" hash="fdsafdsa" group="Test Group 2">
               <div>test</div>
             </SectionMarker>
