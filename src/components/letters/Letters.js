@@ -16,10 +16,16 @@ const letters = () => {
                         French
                     </Button>
                 </div>
+            </div> 
+            <div>
+                <h1 className= "display"> Letter from the Premier </h1>
+                <div className="button-ctr">
+                    <Button href="https://drive.google.com/file/d/1PDYFtERFVBEakLZ7vfbMVv6KA1un7V_l/view?usp=sharing" target="_blank">
+                        English
+                    </Button>
+                </div>
             </div>
-            <h1 className= "display">
-                Letter from the Premier
-            </h1>
+            
         </main>
     )
 }
