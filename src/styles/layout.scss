@@ -23,8 +23,6 @@ $spacing-xs: $spacing-unit * 0.5;
 $center-column-width: 1200px;
 $center-column-margin: $spacing-s;
 .center-column {
-  overflow: visible;
-
   margin-left: $center-column-margin;
   margin-right: $center-column-margin;
 

@@ -9,8 +9,12 @@ const Home = () => {
   return (
     <WelcomePopup>
       <div className="main-grid center-column">
-        <Navigation />
-        <Chair />
+        <div className="main-grid__nav">
+          <Navigation />
+        </div>
+        <div className="main-grid__content">
+          <Chair />
+        </div>
       </div>
     </WelcomePopup>
   );
