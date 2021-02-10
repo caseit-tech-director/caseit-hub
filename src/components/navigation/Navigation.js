@@ -59,6 +59,13 @@ const Navigation = () => {
     };
   }, []);
 
+  // jump to section when nav item click
+  const handleNavItemClick = () => {
+    // re-trigger the scrolling
+    const targetElement = document.querySelector(window.location.hash);
+    targetElement.scrollIntoView();
+  };
+
   return (
     <nav className="nav">
       <AnimateSharedLayout>
@@ -79,6 +86,7 @@ const Navigation = () => {
                     sectionId={item.sectionId}
                     label={item.label}
                     key={index}
+                    onClick={handleNavItemClick}
                   />
                 );
               })}

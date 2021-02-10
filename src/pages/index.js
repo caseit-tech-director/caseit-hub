@@ -20,6 +20,9 @@ const Home = () => {
             <SectionMarker label="test" hash="test" group="Test Group">
               <div>test</div>
             </SectionMarker>
+            <SectionMarker label="test2" hash="test2" group="Test Group">
+              <div>test</div>
+            </SectionMarker>
             <Chair />
             <Chair />
             <Chair />
