@@ -11,6 +11,11 @@
   --clr-primary-darker: rgb(37, 34, 34);
   --clr-primary-darkest: rgb(0, 0, 0);
 
+  --clr-text: var(--clr-primary-darkest);
+  --clr-bg: var(--clr-primary-lightest);
+  --clr-text--inverted: var(--clr-primary-lightest);
+  --clr-bg--inverted: var(--clr-primary-darkest);
+
   --clr-interactive-text: var(--clr-primary-dark);
   --clr-interactive-bg: var(--clr-primary-lightest);
   --clr-interactive-text--inverted: var(--clr-primary-lightest);

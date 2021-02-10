@@ -1,0 +1,32 @@
+@import "../../styles/layout.scss";
+@import "../../styles/responsive.scss";
+
+.welcome-popup {
+  // popup
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  // colour - to control dark mode or note
+  color: var(--clr-text--inverted);
+  background-color: var(--clr-bg--inverted);
+
+  // center align text
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-popup__text {
+  text-align: center;
+
+  & {
+    max-width: 40rem;
+    // margin-top: $spacing-m;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
