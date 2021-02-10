@@ -6,6 +6,9 @@ import Letters from "../components/letters/Letters";
 import About from "../components/about/About";
 import Overview from "../components/overview/Overview";
 import Structure from "../components/structure/Structure";
+import Tech from "../components/tech/Tech";
+import Meet from "../components/meet/Meet";
+import Sponsor from "../components/sponsor/Sponsor";
 
 import "@styles/main.scss";
 import WelcomePopup from "@components/welcomePopup/";
@@ -32,6 +35,9 @@ const Home = () => {
             <About/>
             <Overview/>
             <Structure/>
+            <Tech/>
+            <Meet/>
+            <Sponsor/>
             <SectionMarker label="fdsa" hash="fdsafdsa" group="Test Group 2">
               <div>test</div>
             </SectionMarker>
