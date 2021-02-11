@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import "@styles/main.scss";
+import React, { Component } from "react"
+import "@styles/main.scss"
 
 const about = () => {
   return (
     <main>
+      <h1 className="display"> About The Competition </h1>
       <section>
-        <h1 className="display"> About The Competition </h1>
         <h4> About CaseIT </h4>
         <p>
           CaseIT is the premier international management information systems
@@ -67,6 +67,6 @@ const about = () => {
         <p>For more information, please visit beedie.sfu.ca</p>
       </article>
     </main>
-  );
-};
-export default about;
+  )
+}
+export default about

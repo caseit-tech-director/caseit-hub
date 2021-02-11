@@ -63,6 +63,15 @@ p {
 //   margin-bottom: $spacing-m;
 // }
 
+
+.section, article{
+  margin-bottom: $spacing-m;
+}
+
+.display{
+  margin-bottom: $spacing-xl;
+  margin-top: $spacing-xxl;
+}
 $content-begin-flow-line: 20vh;
 $grid-breakpoint: $breakpoint-m;
 
