@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./card.scss";
 import "@styles/main.scss";
 
-const meet = ({img, subtitle}) => {
+const card = ({img, subtitle}) => {
   return (
     <main>
         <div className="card-ctr">
@@ -16,4 +16,4 @@ const meet = ({img, subtitle}) => {
     </main>
   );
 };
-export default meet;
+export default card;

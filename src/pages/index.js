@@ -9,6 +9,7 @@ import Structure from "../components/sections/Structure"
 import Tech from "../components/sections/Tech"
 import OC from "../components/sections/OC"
 import Sponsor from "../components/sections/Sponsor"
+import TopBar from "../components/topbar/topbar"
 
 import "@styles/main.scss"
 import WelcomePopup from "@components/welcomePopup/"
@@ -17,6 +18,7 @@ import { NavigationContextProvider } from "@components/navigation/NavigationCont
 const Home = () => {
   return (
     <WelcomePopup>
+      <TopBar/>
       <NavigationContextProvider>
         <div className="main-grid center-column">
           <div className="main-grid__nav">

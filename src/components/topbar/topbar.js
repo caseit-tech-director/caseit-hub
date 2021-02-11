@@ -6,7 +6,7 @@ const topbar = () => {
             <div className="logo-container">
             {/* CaseIT Logo */}
             </div>
-            <div>
+            <div className="welcome-txt">
                 <h4>
                     CaseIT 2021 Welcome Package, Presented by the Beedie School of Business
                 </h4>
