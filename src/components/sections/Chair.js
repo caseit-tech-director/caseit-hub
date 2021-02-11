@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import SectionMarker from "../navigation/SectionMarker";
+import Article from "../article/Article";
 import "@styles/main.scss";
 const Welcome = () => {
   return (
-    <main>
-      <h1 className="display">Chair's Welcome</h1>
+    <Article heading="Chair's Welcome" group="introduction">
       {/* Video */}
       <section>
         <p>
@@ -60,7 +60,7 @@ const Welcome = () => {
         <br></br>
         Jordan
       </p>
-    </main>
+    </Article>
   );
 };
 export default Welcome;

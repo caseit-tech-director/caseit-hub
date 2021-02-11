@@ -3,7 +3,7 @@ import Chair from "../components/sections/Chair";
 import Navigation from "../components/navigation";
 import SectionMarker from "../components/navigation/SectionMarker";
 import Letters from "../components/sections/Letters";
-import About from "../components/about/About";
+import About from "../components/sections/About";
 import Overview from "../components/sections/Overview";
 import Structure from "../components/sections/Structure";
 import Tech from "../components/sections/Tech";

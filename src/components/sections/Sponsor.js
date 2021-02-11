@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Button from "../form/Button";
+import Article from "../article/Article";
 
 import "@styles/main.scss";
 
