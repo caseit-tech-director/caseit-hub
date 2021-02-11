@@ -7,7 +7,7 @@ import About from "../components/sections/About";
 import Overview from "../components/sections/Overview";
 import Structure from "../components/sections/Structure";
 import Tech from "../components/sections/Tech";
-import Meet from "../components/meet/Meet";
+import Meet from "../components/sections/Meet";
 import Sponsor from "../components/sections/Sponsor";
 
 import "@styles/main.scss";
