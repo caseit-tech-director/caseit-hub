@@ -145,6 +145,13 @@ const TimezonePicker = ({
     setIsExpanded(!isExpanded);
     e.persist();
     e.stopPropagation();
+
+    if (isExpanded) return;
+    // scroll to the element if we are toggling it on
+    setTimeout(function () {
+      const targetElm = document.querySelector(".timezone-menu__item--active");
+      targetElm.parentNode.scrollTop = targetElm.offsetTop - 50;
+    }, 1);
   };
 
   // timezone picker
