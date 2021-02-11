@@ -4,7 +4,7 @@ const topbar = () => {
     return(
         <div className="topbar">
             <div className="logo-container">
-            {/* CaseIT Logo */}
+                <img src="images/CaseIT_Black.png" alt="CaseIT Logo" width="1em"></img>
             </div>
             <div className="welcome-txt">
                 <h4>
