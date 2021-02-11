@@ -203,8 +203,9 @@ const TimezonePicker = ({
                 const timezoneOffset = timezoneNameToOffset(timezone);
                 const timezoneNameGMT = offsetToGMT(timezoneOffset);
 
+                // use "==" here because currentTimezoneOffset might be string(if it is from cookie)
                 const isCurrentTimezone =
-                  currentTimezoneOffset === timezoneOffset;
+                  currentTimezoneOffset == timezoneOffset;
 
                 return (
                   <a
