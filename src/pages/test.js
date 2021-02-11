@@ -1,12 +1,14 @@
 import React from "react";
 import Button from "../components/form/Button";
 import Navigation from "../components/navigation/";
+import TimezonePicker from "../components/timezonePicker";
 
 import "@styles/main.scss";
 
 const Home = () => {
   return (
     <div className="center-column">
+      <TimezonePicker />
       <Navigation />
       <main>
         <h1 className="display">Display Heading</h1>
