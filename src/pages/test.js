@@ -8,7 +8,34 @@ import "@styles/main.scss";
 const Home = () => {
   return (
     <div className="center-column">
-      <TimezonePicker />
+      <TimezonePicker
+        eventSessions={[
+          {
+            name: "session 1",
+            vancouverTime: "2021-2-14 6:00",
+            timezones: ["GMT-8", "GMT+1", "GMT+7", "GMT+8"],
+          },
+          {
+            name: "session 2",
+            vancouverTime: "2021-2-14 6:00",
+            timezones: ["GMT-8", "GMT-7", "GMT-6", "GMT-5"],
+          },
+        ]}
+      />
+      <TimezonePicker
+        eventSessions={[
+          {
+            name: "session 1",
+            vancouverTime: "2021-2-14 6:00",
+            timezones: ["GMT-8", "GMT+1", "GMT+7", "GMT+8"],
+          },
+          {
+            name: "session 2",
+            vancouverTime: "2021-2-14 6:00",
+            timezones: ["GMT-8", "GMT-7", "GMT-6", "GMT-5"],
+          },
+        ]}
+      />
       <Navigation />
       <main>
         <h1 className="display">Display Heading</h1>
