@@ -6,10 +6,9 @@ import universityDictionary from "../../data/universityDictionary";
 import "./TimezonePicker.scss";
 
 const UNIVERSITY_TIMEZONES = {
-  kpu: "Etc/GMT+8", // "Kwantlen Polytechnic University",
   sfu: "Etc/GMT+8", // "Simon Fraser University",
   uofc: "Etc/GMT+7", // "University of Calgary",
-  uoft: "Etc/GMT+7", // university of toronto
+  uoft: "Etc/GMT+5", // university of toronto
   isu: "Etc/GMT+6", // "Iowa State University",
   uofm: "Etc/GMT+6", // "University of Minnesota",
   ru: "Etc/GMT+5", // ryerson university
