@@ -5,33 +5,13 @@ import React, { useState, useEffect } from "react";
 import { useCookies } from "react-cookie";
 import { motion, AnimatePresence } from "framer-motion";
 import useIsFontLoaded from "../../hooks/useIsFontLoaded";
+import universityDictionary from "../../data/universityDictionary";
 
 import "./WelcomePopup.scss";
 import "./pulsingCaseitDot.scss";
 
 const INTRO_TEXT_PAUSE_TIME = 5000; // 5 seconds
 const ONLY_SHOW_WELCOME_ONCE = false;
-
-const UNIVERSITY_DICTIONARY = {
-  kpu: "Kwantlen Polytechnic University",
-  sfu: "Simon Fraser University",
-  au: "Aarhus University",
-  chula: "Chulalongkorn University",
-  corvinus: "Corvinus University of Budapest",
-  hec: "HEC Montréal",
-  hkust: "Hong Kong University of Science and Technology",
-  iu: "Indiana University",
-  isu: "Iowa State University",
-  um: "Maastricht University",
-  nus: "National University of Singapore",
-  erasmus: "Rotterdam School of Management, Erasmus University",
-  ru: "Ryerson University",
-  uofc: "University of Calgary",
-  hku: "University of Hong Kong",
-  uofm: "University of Minnesota",
-  uoft: "University of Toronto",
-  wlu: "Wilfrid Laurier University",
-};
 
 // the animation of the text container
 const container = {
@@ -60,7 +40,7 @@ const WelcomePopup = ({ children }) => {
   })();
   const universityCode = new URLSearchParams(queryString).get("uni");
 
-  const universityName = UNIVERSITY_DICTIONARY[universityCode];
+  const universityName = universityDictionary[universityCode];
   const isUniversityExist = typeof universityName !== "undefined";
 
   // for tracking whether the user first time using the site or not
