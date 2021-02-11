@@ -77,13 +77,14 @@ const TimezonePicker = ({
   // Timezone Calculation
   const userTimezoneOffset = getUserTimezoneOffset(); // an int that represents the timezone offset compare to UTC
 
+  // use the user timezone for initial value if there is no record of timezone preference in cookie
   const [currentTimezoneOffset, setCurrentTimezoneOffset] = useState(
-    userTimezoneOffset
+    cookies["selected-timezone-offset"] || userTimezoneOffset
   );
 
   const [currentEventTime, setCurrentEventTime] = useState("");
   const [currentEventDate, setCurrentEventDate] = useState("");
-  const [currentSession, setCurrentSession] = useState("Section 1");
+  const [currentSession, setCurrentSession] = useState("");
   const [currentTimezone, setCurrentTimezone] = useState("");
 
   const pickEventSession = (timezoneOffset) => {
@@ -96,7 +97,9 @@ const TimezonePicker = ({
 
   const updateDisplayingInfo = (timezoneOffset) => {
     // STEP 1: select an appropriate event session
-    const selectedEventSession = pickEventSession(timezoneOffset);
+    const selectedEventSession =
+      pickEventSession(timezoneOffset) ||
+      eventSessions[Object.keys(eventSessions)[0]]; // use the first one in the event session, if the timezone is null
     const eventTime = fromVancouverTime(selectedEventSession.vancouverTime);
 
     // STEP 2: calculate the appropiate timezone representation
