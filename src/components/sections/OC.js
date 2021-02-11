@@ -15,12 +15,15 @@ const meet = () => {
         <Card img="images/Simon.png" subtitle="Simon Ford, Academic Director"></Card>
       </div>
       <div className="directors-ctr">
+        <h3> Directors </h3> 
         {/* Directors */}
       </div>
       <div ClassName="asso_coord-ctr">
+        <h3> Associates and Coordinators</h3>
         {/* Coords and Associates */}
       </div>
       <div ClassName="team-host-ctr">
+        <h3> Team Hosts </h3>
         {/* Team Hosts */}
       </div>
     </main>
