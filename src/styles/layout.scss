@@ -37,6 +37,21 @@ $center-column-margin: $spacing-s;
 
 /**
  * 
+ * Sectopm Breaks
+ * 
+ */
+
+.section-marker {
+  margin-top: $spacing-xxl;
+  margin-bottom: $spacing-xxl;
+}
+
+.section-marker:first-child {
+  margin-top: 0rem;
+}
+
+/**
+ * 
  * Standard vertical spcing in typographic layotu
  * 
  */

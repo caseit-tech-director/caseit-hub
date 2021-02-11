@@ -27,17 +27,14 @@ const Home = () => {
             <SectionMarker label="test" hash="test" group="Test Group">
               <div>test</div>
             </SectionMarker>
-            <SectionMarker label="test2" hash="test2" group="Test Group">
-              <div>test</div>
-            </SectionMarker>
-            <Letters/>
+            <Letters />
             <Chair />
-            <About/>
-            <Overview/>
-            <Structure/>
-            <Tech/>
-            <Meet/>
-            <Sponsor/>
+            <About />
+            <Overview />
+            <Structure />
+            <Tech />
+            <Meet />
+            <Sponsor />
             <SectionMarker label="fdsa" hash="fdsafdsa" group="Test Group 2">
               <div>test</div>
             </SectionMarker>

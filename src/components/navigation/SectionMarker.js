@@ -37,7 +37,7 @@ const SectionMarker = ({ group, label, hash, children }) => {
   }, []);
 
   return (
-    <div ref={measureRef}>
+    <div ref={measureRef} className="section-marker">
       <a
         id={hash}
         className="section-anchor"
