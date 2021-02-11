@@ -1,6 +1,5 @@
-import React, { Component } from "react"
-
-import "@styles/main.scss"
+import React, { Component } from "react";
+import "@styles/main.scss";
 
 const about = () => {
   return (
@@ -68,6 +67,6 @@ const about = () => {
         <p>For more information, please visit beedie.sfu.ca</p>
       </article>
     </main>
-  )
-}
-export default about
+  );
+};
+export default about;

@@ -1,14 +1,14 @@
 import React from "react";
-import Chair from "../components/chairWelcome/Chair";
+import Chair from "../components/sections/Chair";
 import Navigation from "../components/navigation";
 import SectionMarker from "../components/navigation/SectionMarker";
-import Letters from "../components/letters/Letters";
+import Letters from "../components/sections/Letters";
 import About from "../components/about/About";
-import Overview from "../components/overview/Overview";
-import Structure from "../components/structure/Structure";
-import Tech from "../components/tech/Tech";
+import Overview from "../components/sections/Overview";
+import Structure from "../components/sections/Structure";
+import Tech from "../components/sections/Tech";
 import Meet from "../components/meet/Meet";
-import Sponsor from "../components/sponsor/Sponsor";
+import Sponsor from "../components/sections/Sponsor";
 
 import "@styles/main.scss";
 import WelcomePopup from "@components/welcomePopup/";
@@ -24,9 +24,6 @@ const Home = () => {
           </div>
           <div className="main-grid__content">
             {/* dummy content for now */}
-            <SectionMarker label="test" hash="test" group="Test Group">
-              <div>test</div>
-            </SectionMarker>
             <Letters />
             <Chair />
             <About />
