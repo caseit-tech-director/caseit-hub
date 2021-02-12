@@ -77,6 +77,7 @@ const Home = () => {
               group="Welcome"
             >
               <h1> Dean's Welcome </h1>
+              <p><a href="https://sfubeedie.wistia.com/medias/sxj489b9sq?wvideo=sxj489b9sq" target="_blank"><img src="https://embed-fastly.wistia.com/deliveries/33ab16655aff60160494a2d5c4306c55.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=cc0336e0" width="640" height="480"></img></a></p>
             </SectionMarker>
             <About/>
             <Overview />

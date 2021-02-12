@@ -13,10 +13,9 @@ const structure = () => {
         hash="structure_intro"
         label="Introduction"
       >
-        <p className="Lead">
-          {" "}
+        <p className="lead">
           Are you in it to win it? We lay out all you need to know case
-          structure, advancement, and this year’s competition rules.{" "}
+          structure, advancement, and this year’s competition rules.
         </p>
       </SectionMarker>
       <SectionMarker
@@ -27,17 +26,15 @@ const structure = () => {
         <section>
           <h2> CaseIT 2021 Cases and Advancement </h2>
           <p>
-            {" "}
             This year, we have two unique cases for competitors to tackle. Case
             I has an 8-hour long deliberation period and is weighted at 40%.
             Case II has a 24-hour long deliberation period and is weighted at
-            60%.{" "}
+            60%.
           </p>
           <p>
-            {" "}
             To win it all at CaseIT 2021, teams must do well in both cases as
             the winner is based on the combined Case I and Case II scores. Below
-            is the advancement structure for CaseIT 2021.{" "}
+            is the advancement structure for CaseIT 2021.
           </p>
           {/* Advancement graphic? */}
         </section>
@@ -99,6 +96,20 @@ const structure = () => {
             </Button>
           </div>
         </section>
+      </SectionMarker>
+      <SectionMarker group="Competition Structure" hash="spirit" label="Spirit Awards">
+          <h2> Spirit Award </h2>
+          <p>
+          The team that best represents the values and spirit of camaraderie, enthusiasm, and dedication will be awarded the Team Spirit Award. This award will be presented to the competing team with the highest cumulative spirit score, based on attendance, performance, and engagement throughout the competition week.
+          </p>
+          <div className="button-ctr">
+          <Button href="https://drive.google.com/file/d/1LXfQ-zyq68RLcycQ2UUP-GSNa0f9EH7W/view?usp=sharing" target="_blank">
+              POINTS
+          </Button>
+          <Button href="https://drive.google.com/file/d/1Uirqqp4lHt9V3bXfzfsk1UESiGg3HISv/view?usp=sharing" target="_blank">
+              CHALLENGES
+          </Button>
+          </div>
       </SectionMarker>
     </main>
   )
