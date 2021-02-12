@@ -187,7 +187,7 @@ const TimezonePicker = ({
           </div>
           <img
             className="timezone-picker__drop-icon"
-            src="images/arrow-drop-down.svg"
+            src="images/icon-arrow-drop-down.svg"
           />
         </a>
 

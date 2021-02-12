@@ -6,7 +6,9 @@
   @extend .link-reset;
 
   // layout
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
   padding: $spacing-unit;
   margin-right: $spacing-m;
 
@@ -32,4 +34,8 @@
   &:active {
     opacity: 0.8;
   }
+}
+
+.button__icon {
+  margin-left: $spacing-xs;
 }
