@@ -65,12 +65,30 @@ p {
 h1,
 h2 {
   // section break
+  margin-top: $spacing-xl;
   margin-bottom: $spacing-l;
 }
 
 h1.display:first-of-type {
   margin-top: 0rem !important;
 }
+
+h4,
+h5 {
+  margin-top: $spacing-xl;
+  margin-bottom: $spacing-unit;
+}
+
+// limit on paragraph size
+$max-paragraph-width: 30rem;
+.lead,
+.body,
+.small,
+p {
+  // max-width: $max-paragraph-width;
+  max-width: 56ch;
+}
+
 // .lead {
 //   margin-bottom: $spacing-m;
 // }
