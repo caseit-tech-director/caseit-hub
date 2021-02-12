@@ -5,12 +5,11 @@ $timezone-label-width: 20%;
 
 .timezone-picker-container {
   // create an anchor for dropdown
+  max-width: auto;
   position: relative;
 }
 
 .timezone-picker {
-  @extend .body;
-
   // interaction cue
   cursor: pointer;
 
@@ -34,6 +33,9 @@ $timezone-label-width: 20%;
   }
 
   &__row {
+    @extend .body;
+    margin: 0rem; // reset margin on body
+
     display: flex;
     flex-grow: 1;
     flex-direction: row;

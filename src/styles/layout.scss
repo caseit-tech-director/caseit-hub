@@ -60,10 +60,10 @@ p {
   margin-bottom: $spacing-m;
 }
 
+// have larger spacing for larger headers
 .display,
 h1,
-h2,
-h3 {
+h2 {
   // section break
   margin-bottom: $spacing-l;
 }
