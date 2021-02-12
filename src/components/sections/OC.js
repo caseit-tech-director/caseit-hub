@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "../OC/Card";
+import Card from "../OC/card";
 
 import "@styles/main.scss";
 
