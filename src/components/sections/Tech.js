@@ -48,7 +48,7 @@ const tech = () => {
             for any events through the agenda with one easy click.
           </li>
           <li>
-            Sponsor Booths: Booths from the sponsors that made this competition
+            Sponsor: Booths from the sponsors that made this competition
             a reality will be showcased through the “Sponsors” page. Check out
             these booths for more information about these sponsors.
           </li>

@@ -82,7 +82,7 @@ const overview = () => {
         <p>
           <ul>
             <li>
-              ReadyForIT will occur through two synchronous sessions. We welcome
+              PaintIT will occur through two synchronous sessions. We welcome
               case competitors to attend the session that corresponds with their
               timezone stagger.
             </li>

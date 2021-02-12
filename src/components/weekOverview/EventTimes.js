@@ -7,7 +7,7 @@ const EventTimes = {
     },
     {
       name: "session 2",
-      vancouverTime: "2021-2-14 6:00",
+      vancouverTime: "2021-2-14 12:00",
       timezones: ["GMT-8", "GMT-7", "GMT-6", "GMT-5"],
     },
   ],

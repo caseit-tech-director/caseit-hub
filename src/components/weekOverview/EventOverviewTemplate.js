@@ -9,7 +9,8 @@ const EventOverviewTemplate = ({
   eventName,
   dressCode,
   attendance,
-  children, // the content
+  children,
+  hashName, // the content
 }) => {
   const eventSessions = EventTimes[eventName];
 
@@ -17,7 +18,7 @@ const EventOverviewTemplate = ({
     console.warn(
       `Event ${eventName} does not have a record inside EventTime.js`
     );
-
+  
   const sectionId = useMemo(() => eventName.split(" ").join("_"));
 
   return (

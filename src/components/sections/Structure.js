@@ -52,6 +52,22 @@ const structure = () => {
             rules will be addressed on the CaseIT 2021 Official FAQ living
             document which will be updated regularly.{" "}
           </p>
+          <div className="button-ctr">
+            <Button
+              href="https://drive.google.com/file/d/14l72Ocfbe-dT3KTgBN_wm_B1sSyiVzsE/view?usp=sharing"
+              target="_blank"
+            >
+              {" "}
+              RULES{" "}
+            </Button>
+            <Button
+              href="https://docs.google.com/document/d/1YcvvITpnLyUXdd3d7Gryr5AFe16diXII_UszVLB33Q8/edit?usp=sharing"
+              target="_blank"
+            >
+              {" "}
+              FAQ{" "}
+            </Button>
+          </div>
           <p>
             {" "}
             In addition to these resources, the Competition Execution team will
@@ -73,22 +89,6 @@ const structure = () => {
               <li>Time: 14:00 - 15:00 PST </li>
             </ul>
           </p>
-          <div className="button-ctr">
-            <Button
-              href="https://drive.google.com/file/d/14l72Ocfbe-dT3KTgBN_wm_B1sSyiVzsE/view?usp=sharing"
-              target="_blank"
-            >
-              {" "}
-              RULES{" "}
-            </Button>
-            <Button
-              href="https://docs.google.com/document/d/1YcvvITpnLyUXdd3d7Gryr5AFe16diXII_UszVLB33Q8/edit?usp=sharing"
-              target="_blank"
-            >
-              {" "}
-              FAQ{" "}
-            </Button>
-          </div>
         </section>
       </SectionMarker>
       <SectionMarker

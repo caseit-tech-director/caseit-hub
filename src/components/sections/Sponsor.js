@@ -14,6 +14,9 @@ const sponsor = () => {
       </div>
       <div className="ad-ctr">
           <h3> Beedie </h3>
+          <h5 className="sponsor-subheader">
+            Title Sponsor
+          </h5>
           <p>
             Established in 1954, Beedie has grown from humble B.C. roots to
             become one of the largest industrial developers and property
@@ -106,6 +109,9 @@ const sponsor = () => {
         </div>
       <div className="ad-ctr">
           <h3> Baker Tilly WM LLP </h3>
+          <h5 className="sponsor-subheader">
+            Gold Sponsor
+          </h5>
           <p>
             {" "}
             Baker Tilly WM LLP is a leading audit, tax, and advisory firm, based
@@ -147,6 +153,7 @@ const sponsor = () => {
         </div>
         <div className="ad-ctr">
           <h3> Microsoft </h3>
+          <h5 className="sponsor-subheader"> Networking Sponsor </h5>
           <p>
             {" "}
             Established in 1985, Microsoft Canada Inc. is the Canadian
