@@ -1,11 +1,21 @@
-import React, { Component } from "react";
-import SectionMarker from "../navigation/SectionMarker";
-import "@styles/main.scss";
+import React, { Component } from "react"
+import SectionMarker from "../navigation/SectionMarker"
+import "@styles/main.scss"
 const Welcome = () => {
   return (
     <main>
       <h2>Chair's Welcome</h2>
-      <iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/V0aajXvxx64" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div className="iframe-ctr">
+      <div className="vid-ctr">
+        <iframe
+          className="video"
+          src="https://www.youtube.com/embed/V0aajXvxx64"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      </div>
       <section>
         <p>
           It is our pleasure to welcome you to CaseIT 2021. Hosted in
@@ -64,6 +74,6 @@ const Welcome = () => {
         <p>Jordan</p>
       </article>
     </main>
-  );
-};
-export default Welcome;
+  )
+}
+export default Welcome
