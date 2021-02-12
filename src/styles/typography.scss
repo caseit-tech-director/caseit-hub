@@ -150,7 +150,7 @@ a {
   background-image: linear-gradient(var(--clr-accent), var(--clr-accent));
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 100% 0%;
+  background-size: 0% 0.1em;
   /* transition: none cubic-bezier(0.19, 1, 0.22, 1) 0.3s; */
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   transition-duration: 0.3s;
@@ -160,8 +160,8 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  background-size: 100% 100%;
-  color: var(--clr-primary-lightest);
+  background-size: 100% 0.1em;
+  color: var(--clr-accent);
 }
 
 a:active {
@@ -179,5 +179,6 @@ a.inactive {
   &:active,
   &:focus {
     color: var(--clr-primary-darker);
+    // color: unset;
   }
 }

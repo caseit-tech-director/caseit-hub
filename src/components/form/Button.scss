@@ -1,13 +1,17 @@
 @import "@styles/layout.scss";
+@import "@styles/typography.scss";
 
 .button-primary {
+  // link reset
+  @extend .link-reset;
+
   // layout
   display: inline-block;
   padding: $spacing-unit;
   margin-right: $spacing-m;
-  
+
   // colours
-  color: var(--clr-interactive-text--inverted);
+  color: var(--clr-interactive-text--inverted) !important;
   background-color: var(--clr-interactive-bg--inverted);
 
   // shadows
