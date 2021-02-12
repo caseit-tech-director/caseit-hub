@@ -5,7 +5,7 @@ import { useNavMenu } from "./NavigationContext";
 const SECTION_VERTICAL_OFFSET = 200; // vertical offset to compensate the anchor difference
 const SectionMarker = ({ group, label, hash, children }) => {
   const measureRef = useRef();
-  const [navMenu, registerSection] = useNavMenu();
+  const [navMenu, registerSection, updateNav] = useNavMenu();
 
   //TODO: use intersection observer to update the current hashtag
   useEffect(() => {
@@ -15,6 +15,7 @@ const SectionMarker = ({ group, label, hash, children }) => {
       if (entry.isIntersecting) {
         // setSectionInView(true);
         window.history.pushState({}, "", `#${hash}`);
+        updateNav();
       } else {
         // setSectionInView(false);
       }

@@ -47,33 +47,53 @@ const Navigation = () => {
 
   const [navMenu] = useNavMenu();
 
+  const currentLocationHash = getLocationHash();
+
   // the nav bar will update itself base on the location hash
-  const [currentSection, setCurrentSection] = useState(getLocationHash());
+  const [currentSection, setCurrentSection] = useState(currentLocationHash);
   const [currentGroup, setCurrentGroup] = useState();
 
-  useEffect(() => {
+  const updateCurrentGroup = (targetSection) => {
     if (!navMenu) return;
+
     let initialGroup;
-    // alert(Object[0]);
     Object.values(navMenu).forEach((group) => {
       const groupContainCurrent = group.content.find(
-        ({ sectionId }) => sectionId === currentSection
+        ({ sectionId }) => sectionId === targetSection
       );
       if (groupContainCurrent) initialGroup = group.groupLabel;
     });
-
     setCurrentGroup(initialGroup);
+  };
+
+  // change update the current section base on the url
+  useEffect(() => {
+    setCurrentSection(currentLocationHash);
+    // see which one is the current group
+    updateCurrentGroup(currentLocationHash);
+  }, [currentLocationHash]);
+
+  useEffect(() => {
+    updateCurrentGroup(currentSection);
   }, [navMenu.length]); // only update when the nav menu is changed
 
   useEffect(() => {
     const handleHashChange = () => {
       setCurrentSection(getLocationHash());
     };
-    window.addEventListener("hashchange", handleHashChange);
+    window.addEventListener("hashchange", handleHashChange, false);
     return () => {
-      window.removeEventListener("hashchange", handleHashChange);
+      window.removeEventListener("hashchange", handleHashChange, false);
     };
   }, []);
+
+  const handleLinkClick = (e) => {
+    // scroll to element
+    const targetElementId = e.target.href.split("#")[1];
+    document.querySelector(`#${targetElementId}`).scrollIntoView();
+    e.preventDefault();
+    // console.log();
+  };
 
   return (
     <nav className="nav">
@@ -99,6 +119,7 @@ const Navigation = () => {
                     sectionId={item.sectionId}
                     label={item.label}
                     key={index}
+                    onClick={handleLinkClick}
                   />
                 );
               })}

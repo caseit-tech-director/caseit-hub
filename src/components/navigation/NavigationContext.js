@@ -54,8 +54,13 @@ const NavigationContextProvider = ({ children }) => {
     // trigger re-render
     forceUpdate();
   };
+
+  const updateNav = forceUpdate;
+
   return (
-    <NavigationContext.Provider value={[navMenu.current, registerSection]}>
+    <NavigationContext.Provider
+      value={[navMenu.current, registerSection, updateNav]}
+    >
       {children}
     </NavigationContext.Provider>
   );
