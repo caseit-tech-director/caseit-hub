@@ -1,12 +1,6 @@
-import React, { Component } from 'react';
-
-
+import React, { Component } from "react";
 
 const index = () => {
-    return(
-        <div>
-
-        </div>
-    )
-}
+  return <div></div>;
+};
 export default index;
