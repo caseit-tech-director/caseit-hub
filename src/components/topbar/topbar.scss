@@ -1,5 +1,6 @@
 @import "../../styles/layout.scss";
 @import "../../styles/responsive.scss";
+@import "../../styles/typography.scss";
 
 .topbar-container {
   position: fixed;
@@ -24,8 +25,10 @@
   }
 }
 .logo-container {
+  a {
+    @extend .link-reset;
+  }
   img {
     height: 1.5rem;
   }
 }
-
