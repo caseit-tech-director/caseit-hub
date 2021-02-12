@@ -181,7 +181,9 @@ const TimezonePicker = ({
             </div>
           </div>
           <div className="timezone-picker__row">
-            <div className="timezone-picker__session">{currentSession}</div>
+            {currentSession && (
+              <div className="timezone-picker__session">{currentSession}</div>
+            )}
           </div>
           <img
             className="timezone-picker__drop-icon"
@@ -246,9 +248,11 @@ const TimezonePicker = ({
           )}
         </AnimatePresence>
       </div>
-      <p className="small">
-        *Session is assigned based on the university's timezone
-      </p>
+      {currentSession && (
+        <p className="small">
+          *Session is assigned based on the university's timezone
+        </p>
+      )}
     </>
   );
 };

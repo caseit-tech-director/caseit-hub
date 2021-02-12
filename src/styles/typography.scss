@@ -136,3 +136,48 @@ h5,
 
   letter-spacing: -0.0025em;
 }
+
+/* 
+  Interactive Typography
+*/
+
+a {
+  display: inline-block;
+
+  /* https://cssanimation.rocks/animating-links/ */
+  color: var(--clr-primary-light);
+  text-decoration: none;
+  background-image: linear-gradient(var(--clr-accent), var(--clr-accent));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0%;
+  /* transition: none cubic-bezier(0.19, 1, 0.22, 1) 0.3s; */
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: 0.3s;
+  transition-property: background-size color;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  background-size: 100% 100%;
+  color: var(--clr-primary-lightest);
+}
+
+a:active {
+  opacity: 0.7;
+}
+
+a.inactive {
+  text-decoration: line-through;
+}
+
+.link-reset {
+  background-image: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--clr-primary-darker);
+  }
+}
