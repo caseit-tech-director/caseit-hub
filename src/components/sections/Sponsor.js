@@ -15,7 +15,7 @@ const sponsor = () => {
       <div className="ad-ctr">
           <h3> Beedie </h3>
           <h5 className="sponsor-subheader">
-            Title Sponsor
+            Diamond Sponsor
           </h5>
           <p>
             Established in 1954, Beedie has grown from humble B.C. roots to
@@ -101,11 +101,7 @@ const sponsor = () => {
             and can be seen through a variety of ongoing philanthropic endeavors
             that supports the people in our communities who need it most.
           </p>
-          <iframe
-            src="sponsors/beedie/Beedie_Ad.pdf"
-            width="100%"
-            height="500px"
-          ></iframe>
+          <img src="sponsors/beedie/Beedie_Ad.jpg" alt="Beedie Ad"></img>
         </div>
       <div className="ad-ctr">
           <h3> Baker Tilly WM LLP </h3>
@@ -145,11 +141,7 @@ const sponsor = () => {
             catalyst for the world’s innovations, personal and global, large and
             small.
           </p>
-          <iframe
-            src="sponsors/pearson/Pearson_Ad.pdf"
-            width="100%"
-            height="500px"
-          ></iframe>
+          <img src="sponsors/pearson/Pearson_Ad.jpg" alt="Pearson Ad"></img>
         </div>
         <div className="ad-ctr">
           <h3> Microsoft </h3>

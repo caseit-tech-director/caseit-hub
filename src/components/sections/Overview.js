@@ -33,6 +33,7 @@ const overview = () => {
         eventName="ReadyForIT"
         dressCode="Smart Casual"
         attendance="Mandatory"
+        hashName="ready_for_it"
       >
         <p>
           ReadyForIT is the first event of the competition week, and is composed
@@ -69,6 +70,7 @@ const overview = () => {
         eventName="PaintIT"
         dressCode="Casual"
         attendance="Highly Recommended"
+        hashName="paint_it"
       >
         <p>
           In between the two cases, take a moment to unwind and connect with
@@ -109,9 +111,10 @@ const overview = () => {
         </p>
       </EventOverviewTemplate>
       <EventOverviewTemplate
-        eventName="RaceIT A Virtual Amazing Race"
+        eventName="RaceIT: A Virtual Amazing Race"
         dressCode="Casual"
         attendance="Highly Recommended"
+        hashName="race_it"
       >
         <p>
           RaceIT: A Virtual Amazing Race, allows teams to discover some of
@@ -147,6 +150,7 @@ const overview = () => {
         eventName="Sponsor Networking"
         dressCode="Business Casual"
         attendance="Highly Recommended"
+        hashName="networking"
       >
         <p>
           We are delighted to present Sponsor Networking at CaseIT 2021, which
@@ -195,6 +199,7 @@ const overview = () => {
         eventName="Awards Ceremony"
         dressCode="Smart casual, or as you would dress for an awards banquet!"
         attendance="Highly Recommended"
+        hashName="awards_ceremony"
       >
         <p>
           The Awards Ceremony concludes the CaseIT 2021 competition week, and is

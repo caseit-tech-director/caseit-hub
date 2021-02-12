@@ -60,6 +60,7 @@ const Welcome = () => {
           with you our experiences alongside 60 other competitors.
         </p>
         <p>Sincerely, </p>
+        <img className="signature" src="images/jordan_sign.png"></img>
         <p>Jordan</p>
       </article>
     </main>

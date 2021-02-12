@@ -63,6 +63,17 @@ p {
   margin-top: $spacing-unit;
 }
 
+.signature{
+  margin-bottom: $spacing-s;
+}
+
+.images{
+  margin-bottom: $spacing-l;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .welcome{
   margin-bottom: $spacing-unit;
 }

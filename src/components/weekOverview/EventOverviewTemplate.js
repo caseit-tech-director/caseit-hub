@@ -19,10 +19,9 @@ const EventOverviewTemplate = ({
       `Event ${eventName} does not have a record inside EventTime.js`
     );
   
-  const sectionId = useMemo(() => eventName.split(" ").join("_"));
 
   return (
-    <SectionMarker group="Week Overview" label={eventName} hash={sectionId}>
+    <SectionMarker group="Week Overview" label={eventName} hash={hashName}>
       <div className="event-overview">
         <h2>{eventName}</h2>
         {typeof eventSessions !== "undefined" && (

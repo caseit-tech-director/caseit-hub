@@ -25,7 +25,6 @@ const EventTimes = {
   ],
   "Sponsor Networking": [
     {
-      name: "session 1",
       vancouverTime: "2021-2-16 13:00",
       timezones: [
         "GMT-8",
@@ -41,8 +40,7 @@ const EventTimes = {
   ],
   "Awards Ceremony": [
     {
-      name: "session 1",
-      vancouverTime: "2021-2-16 20:00",
+      vancouverTime: "2021-2-18 20:00",
       timezones: [
         "GMT-8",
         "GMT+1",
