@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import SectionMarker from "../navigation/SectionMarker"
 
+
 import "@styles/main.scss"
 import EventOverviewTemplate from "@components/weekOverview/EventOverviewTemplate"
 
@@ -27,6 +28,12 @@ const overview = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+      </SectionMarker>
+
+      <SectionMarker label="Competition Schedule" hash="schedule" group="Week Overview">
+      <h2> Competition Schedule </h2>
+      <img src="images/schedule_NA.png" alt="Session 1 Schedule"></img>
+      <img src="images/schedule_NA.png" alt="Session 2 Schedule"></img>
       </SectionMarker>
 
       <EventOverviewTemplate
