@@ -9,7 +9,9 @@ const SectionMarker = ({ group, label, hash, children }) => {
 
   //TODO: use intersection observer to update the current hashtag
   useEffect(() => {
-    const options = { rootMargin: `${-SECTION_VERTICAL_OFFSET}px 0px 0px 0px` };
+    const options = {
+      rootMargin: `${-SECTION_VERTICAL_OFFSET}px 0px 0px 00%`,
+    };
     const observer = new IntersectionObserver(function (entries, observer) {
       const entry = entries[0];
       if (entry.isIntersecting) {
