@@ -125,7 +125,13 @@ const TimezonePicker = ({
   // auto update the component when receive cookie update
   useEffect(() => {
     const cookieTimezoneOffset = cookies["selected-timezone-offset"];
-    if (cookieTimezoneOffset) updateDisplayingInfo(cookieTimezoneOffset);
+    if (
+      cookieTimezoneOffset &&
+      cookieTimezoneOffset !== currentTimezoneOffset
+    ) {
+      updateDisplayingInfo(cookieTimezoneOffset);
+      setCurrentTimezoneOffset(cookieTimezoneOffset);
+    }
   }, [cookies["selected-timezone-offset"]]);
 
   // adding listener for hiding the menu
