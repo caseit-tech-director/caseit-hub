@@ -8,9 +8,9 @@ import "./TimezonePicker.scss";
 const UNIVERSITY_TIMEZONES = {
   sfu: "Etc/GMT+8", // "Simon Fraser University",
   uofc: "Etc/GMT+7", // "University of Calgary",
-  uoft: "Etc/GMT+5", // university of toronto
   isu: "Etc/GMT+6", // "Iowa State University",
   uofm: "Etc/GMT+6", // "University of Minnesota",
+  uoft: "Etc/GMT+5", // university of toronto
   ru: "Etc/GMT+5", // ryerson university
   hec: "Etc/GMT+5", //"HEC Montréal",
   iu: "Etc/GMT+5", // "Indiana University",
