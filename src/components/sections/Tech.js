@@ -56,7 +56,7 @@ const tech = () => {
             Organizing Committee member through a private messaging system on
             the platform. Competitors may also request to “meet” with another
             competitor or Organizing Committee member through a video-calling
-            system on the platform.
+            system on the platform. Scheduled meetings can be found in the "Coffee Chat" tab.
           </li>
         </ul>
       </section>
