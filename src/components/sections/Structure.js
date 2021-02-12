@@ -12,6 +12,7 @@ const structure = () => {
           Are you in it to win it? We lay out all you need to know case
           structure, advancement, and this year’s competition rules.
         </p>
+        <img className="image" src="images/comp_structure.png" alt="Competition Structure"></img>
       <SectionMarker
         group="Competition Structure"
         hash="case_advancement"
@@ -31,7 +32,6 @@ const structure = () => {
             is the advancement structure for CaseIT 2021.
           </p>
           <img className="image" src="images/comp_advancement.png" alt="Competition Advancement"></img>
-          <img className="image" src="images/comp_structure.png" alt="Competition Structure"></img>
         </section>
       </SectionMarker>
       <SectionMarker
