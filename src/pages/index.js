@@ -18,8 +18,8 @@ import { NavigationContextProvider } from "@components/navigation/NavigationCont
 const Home = () => {
   return (
     <WelcomePopup>
-      <TopBar />
       <NavigationContextProvider>
+        <TopBar />
         <div className="main-grid center-column">
           <div className="main-grid__nav">
             <Navigation />
