@@ -67,40 +67,45 @@ const WelcomePopup = ({ children }) => {
 
   return (
     <>
-      <AnimatePresence>
-        {isShowingPopup && (
-          <motion.div
-            className="welcome-popup"
-            exit={{ opacity: 0, transition: { delay: 0.1 } }}
-          >
-            <motion.div className="pulsing-caseit-dot" exit={{ opacity: 0 }} />
+      <div>
+        <AnimatePresence>
+          {isShowingPopup && (
             <motion.div
-              className="welcome-popup__text center-column"
-              variants={container}
-              initial="hidden"
-              exit="hidden"
-              // display nothing if the font is not loaded
-              // so we are not getting the Flash of Unstyled Text effect
-              animate={isFontLoaded ? "show" : "hidden"}
-              // fire when the last child's animation is done
-              onAnimationComplete={onLastTextAnimationComplete}
+              className="welcome-popup"
+              exit={{ opacity: 0, transition: { delay: 0.1 } }}
             >
-              {/* The Welcome Content begins here */}
-              {isFontLoaded && (
-                <>
-                  <motion.p className="lead" variants={item}>
-                    Welcome, {universityName}!
-                  </motion.p>
-                  <motion.p className="small" variants={item}>
-                    We have prepared a comprehensive guide for you to navigate
-                    CaseIT 2021.
-                  </motion.p>
-                </>
-              )}
+              <motion.div
+                className="pulsing-caseit-dot"
+                exit={{ opacity: 0 }}
+              />
+              <motion.div
+                className="welcome-popup__text center-column"
+                variants={container}
+                initial="hidden"
+                exit="hidden"
+                // display nothing if the font is not loaded
+                // so we are not getting the Flash of Unstyled Text effect
+                animate={isFontLoaded ? "show" : "hidden"}
+                // fire when the last child's animation is done
+                onAnimationComplete={onLastTextAnimationComplete}
+              >
+                {/* The Welcome Content begins here */}
+                {isFontLoaded && (
+                  <>
+                    <motion.p className="lead" variants={item}>
+                      Welcome, {universityName}!
+                    </motion.p>
+                    <motion.p className="small" variants={item}>
+                      We have prepared a comprehensive guide for you to navigate
+                      CaseIT 2021.
+                    </motion.p>
+                  </>
+                )}
+              </motion.div>
             </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          )}
+        </AnimatePresence>
+      </div>
       {!isShowingPopup && children}
     </>
   );
