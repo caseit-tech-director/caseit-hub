@@ -88,13 +88,6 @@ const Home = () => {
               <About />
             </SectionMarker>
             <SectionMarker
-              label="Week Overview"
-              hash="week_overview"
-              group="Information"
-            >
-              <Overview />
-            </SectionMarker>
-            <SectionMarker
               label="Competition Structure"
               hash="comp_structure"
               group="Information"
@@ -104,6 +97,7 @@ const Home = () => {
             <SectionMarker label="Technology" hash="tech" group="Information">
               <Tech />
             </SectionMarker>
+            <Overview />
             <SectionMarker
               label="Meet the Teams"
               hash="teams"
