@@ -27,7 +27,7 @@ const Home = () => {
           <div className="main-grid__content">
             {/* dummy content for now */}
             <h1 className="welcome">CaseIT 2021 Welcome Package</h1>
-            <p>presented by the <a href="https://beedie.sfu.ca"> SFU Beedie School of Business</a></p>
+            <p>presented by the <a href="https://beedie.sfu.ca" target="_blank"> SFU Beedie School of Business</a></p>
             <SectionMarker
               label="Letter from the Prime Minister"
               hash="letter_prime"

@@ -99,6 +99,11 @@ const tech = () => {
           access the live chat function, how to navigate through the Hubilo
           platform, and many more.
         </p>
+        <div className="button-ctr">
+        <Button href="https://drive.google.com/file/d/19vgAlrJp1adcDqn8AwOoEUzE4NWz3UL3/view?usp=sharing" target="_blank">
+          TECHNOLOGY REQUIREMENTS GUIDE
+        </Button>
+        </div>
       </section>
     </main>
   )
