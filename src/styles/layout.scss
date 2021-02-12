@@ -59,27 +59,26 @@ $center-column-margin: $spacing-s;
 p {
   margin-bottom: $spacing-m;
 }
-.sponsor-subheader{
+.sponsor-subheader {
   margin-top: $spacing-unit;
 }
 
-.signature{
+.signature {
   margin-bottom: $spacing-s;
 }
 
-.images{
+.images {
   margin-bottom: $spacing-l;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.welcome{
+.welcome {
   margin-bottom: $spacing-unit;
 }
 
-
-.video{
+.video {
   margin-bottom: $spacing-m;
 }
 
@@ -138,12 +137,9 @@ $grid-breakpoint: $breakpoint-m;
 $grid-breakpoint-m: $breakpoint-xl;
 
 .main-grid {
-  display: grid;
-  grid-gap: 16px;
-
-  grid-template-columns: 1fr;
-
   @include viewportLargerThan($grid-breakpoint) {
+    display: grid;
+    grid-gap: 16px;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr;
     grid-template-areas: "nav content";
