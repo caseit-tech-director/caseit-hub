@@ -76,26 +76,14 @@ const Home = () => {
               hash="dean_welcome"
               group="Welcome"
             >
-              <h2> Dean's Welcome </h2>
+              <h1> Dean's Welcome </h1>
             </SectionMarker>
-            <SectionMarker
-              label="About the Competition"
-              hash="about"
-              group="Information"
-            >
-              <About />
-            </SectionMarker>
-            <SectionMarker
-              label="Competition Structure"
-              hash="comp_structure"
-              group="Information"
-            >
-              <Structure />
-            </SectionMarker>
+            <About/>
+            <Overview />
+            <Structure />
             <SectionMarker label="Technology" hash="tech" group="Information">
               <Tech />
             </SectionMarker>
-            <Overview />
             <SectionMarker
               label="Meet the Teams"
               hash="teams"

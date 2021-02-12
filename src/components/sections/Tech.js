@@ -25,6 +25,7 @@ const tech = () => {
         </p>
       </section>
       <section>
+        <p>
         <ul>
           Main Features of Hubilo
           <li>
@@ -59,6 +60,7 @@ const tech = () => {
             system on the platform. Scheduled meetings can be found in the "Coffee Chat" tab.
           </li>
         </ul>
+        </p>
       </section>
       <section>
         <p>How to Access CaseIT:</p>
@@ -68,9 +70,11 @@ const tech = () => {
           <li>Log-in Code: CaseIT2021</li>
         </ul>
         <p>
-          All competitors and coaches can access the platform through the link:
-          https://caseit2021.hubilo.com/community/
+          All competitors and coaches can access the platform through the link
         </p>
+        <div className="button-ctr">
+          <Button href="https://caseit2021.hubilo.com/community/" target="_blank"> HUBILO </Button>
+        </div>
         <p>
           The CaseIT Organizing Committee has also created a Technology
           Requirements Guide for a more in-depth look into the different online

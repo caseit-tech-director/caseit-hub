@@ -1,12 +1,15 @@
 import React, { Component } from "react"
+import SectionMarker from "../navigation/SectionMarker";
 import "@styles/main.scss"
+
 
 const about = () => {
   return (
     <main>
       <h1 className="display"> About The Competition </h1>
+      <SectionMarker group="About" hash="about_caseit" label="About CaseIT">
       <section>
-        <h4> About CaseIT </h4>
+        <h2> About CaseIT </h2>
         <p>
           CaseIT is the premier international management information systems
           (MIS) business case competition hosted each year in collaboration with
@@ -32,8 +35,10 @@ const about = () => {
           competitions in the world.
         </p>
       </section>
+      </SectionMarker>
+      <SectionMarker group="About" hash="about_sfu" label="About SFU">
       <article>
-        <h4> About SFU </h4>
+        <h2> About SFU </h2>
         <p>
           Since its inception, the Beedie School of Business at Simon Fraser
           University has championed lifelong learning, innovation, and impactful
@@ -66,6 +71,7 @@ const about = () => {
         </p>
         <p>For more information, please visit beedie.sfu.ca</p>
       </article>
+      </SectionMarker>
     </main>
   )
 }
