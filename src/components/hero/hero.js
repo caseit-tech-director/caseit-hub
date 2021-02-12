@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import Canvas from "./Canvas";
+import Canvas from "./canvas";
 import { setup, draw } from "./AnimatedBackground";
 import "./hero.scss";
 
