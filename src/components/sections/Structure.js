@@ -30,7 +30,8 @@ const structure = () => {
             the winner is based on the combined Case I and Case II scores. Below
             is the advancement structure for CaseIT 2021.
           </p>
-          {/* Advancement graphic? */}
+          <img className="image" src="images/comp_advancement.png" alt="Competition Advancement"></img>
+          <img className="image" src="images/comp_structure.png" alt="Competition Structure"></img>
         </section>
       </SectionMarker>
       <SectionMarker
