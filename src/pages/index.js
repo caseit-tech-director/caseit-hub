@@ -35,7 +35,7 @@ const Home = () => {
               hash="letter_prime"
               group="Welcome"
             >
-              <h1> Letter from the Prime Minister </h1>
+              <h2> Letter from the Prime Minister </h2>
               <div className="button-ctr">
                 <Button
                   href="https://drive.google.com/file/d/1I_j5-Bf5ED9XoJxkx_0orIlrlJixR7Ky/view?usp=sharing"
@@ -56,7 +56,7 @@ const Home = () => {
               hash="letter_premier"
               group="Welcome"
             >
-              <h1> Letter from the Premier </h1>
+              <h2> Letter from the Premier </h2>
               <div className="button-ctr">
                 <Button
                   href="https://drive.google.com/file/d/1PDYFtERFVBEakLZ7vfbMVv6KA1un7V_l/view?usp=sharing"
@@ -78,7 +78,7 @@ const Home = () => {
               hash="dean_welcome"
               group="Welcome"
             >
-              <h1 className="display"> Dean's Welcome </h1>
+              <h2> Dean's Welcome </h2>
             </SectionMarker>
             <SectionMarker
               label="About the Competition"

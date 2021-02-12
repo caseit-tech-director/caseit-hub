@@ -1,10 +1,10 @@
-import React, { Component } from "react"
-import SectionMarker from "../navigation/SectionMarker"
-import "@styles/main.scss"
+import React, { Component } from "react";
+import SectionMarker from "../navigation/SectionMarker";
+import "@styles/main.scss";
 const Welcome = () => {
   return (
     <main>
-      <h1 className="display">Chair's Welcome</h1>
+      <h2>Chair's Welcome</h2>
       {/* Video */}
       <section>
         <p>
@@ -63,6 +63,6 @@ const Welcome = () => {
         <p>Jordan</p>
       </article>
     </main>
-  )
-}
-export default Welcome
+  );
+};
+export default Welcome;

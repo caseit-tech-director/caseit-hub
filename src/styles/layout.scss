@@ -20,7 +20,7 @@ $spacing-xs: $spacing-unit * 0.5;
  * The main colum of the layout
  * 
  */
-$center-column-width: 1200px;
+$center-column-width: 1100px;
 $center-column-margin: $spacing-s;
 .center-column {
   margin-left: $center-column-margin;
@@ -57,7 +57,19 @@ $center-column-margin: $spacing-s;
  */
 .body,
 p {
-  margin-bottom: $spacing-s;
+  margin-bottom: $spacing-m;
+}
+
+.display,
+h1,
+h2,
+h3 {
+  // section break
+  margin-bottom: $spacing-l;
+}
+
+h1.display:first-of-type {
+  margin-top: 0rem !important;
 }
 // .lead {
 //   margin-bottom: $spacing-m;
@@ -81,7 +93,7 @@ $grid-breakpoint: $breakpoint-m;
 
   grid-template-columns: 1fr;
   @include viewportLargerThan($grid-breakpoint) {
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
     grid-template-areas: "nav content";
   }
