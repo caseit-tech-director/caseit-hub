@@ -26,10 +26,8 @@ const Home = () => {
           </div>
           <div className="main-grid__content">
             {/* dummy content for now */}
-            <SectionMarker label="Welcome Package" hash="hello" group="Welcome">
-              <h1 className="display">Welcome Package</h1>
-              <p>for CaseIT 2021, presented by the Beedie School of Business</p>
-            </SectionMarker>
+              <h1 className="display">CaseIT 2021 Welcome Package</h1>
+              <p>presented by the Beedie School of Business</p>
             <SectionMarker
               label="Letter from the Prime Minister"
               hash="letter_prime"
@@ -104,6 +102,7 @@ const Home = () => {
               group="Stakeholders"
             >
               <h1 className="display"> Meet the Teams </h1>
+              <img src="images/Map.png"></img>
             </SectionMarker>
             <SectionMarker
               label="Organizing Committee"

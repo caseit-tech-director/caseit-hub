@@ -1,19 +1,22 @@
 import React, { Component } from "react";
 import "./card.scss";
 import "@styles/main.scss";
+import Images from "./imageData.js"
 
-const card = ({img, subtitle}) => {
+const card = () => {
   return (
-    <main>
-        <div className="card-ctr">
-            <div className="img-ctr">
-                <img src={img} alt={subtitle} width="745" height="420"></img>
-            </div>
-            <div className="subtitle-ctr">
-                <p>{subtitle}</p>
-            </div>
+    <div className="OC-container">
+    {Images.map((val) => {
+      return (
+        <div className="OC-profile">
+          <img
+            src={val}
+            className="OC-profile__image"
+          />
         </div>
-    </main>
+      );
+    })}
+  </div>
   );
 };
 export default card;

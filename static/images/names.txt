@@ -1,0 +1,49 @@
+CaseIT_Black.png
+Map.png
+[AcademicDirector]_Simon Ford.png
+[Associate]_Diana.png
+[Associate]_Jasmeet.png
+[Associate]_Olivia.png
+[Chair]_Jordan.png
+[Coordinator] Kelly.png
+[Coordinator] Tejas.png
+[Coordinator]_Alicia.png
+[Coordinator]_Emily S.png
+[Coordinator]_Gurbir.png
+[Coordinator]_Lily.png
+[Coordinator]_Max.png
+[Director]_Ahmad.png
+[Director]_Alicia.png
+[Director]_Alvin.png
+[Director]_Amena.png
+[Director]_Annie.png
+[Director]_Cody.png
+[Director]_Denzel.png
+[Director]_Donovan.png
+[Director]_Emily.png
+[Director]_Jay.png
+[Director]_Joaquin.png
+[Director]_Sid.png
+[Director]_Vanessa.png
+[Diriector]_Henry.png
+[SEDO]_Hansel Wu.png
+[TeamHost]_Ali.png
+[TeamHost]_Ashley.png
+[TeamHost]_Ben.png
+[TeamHost]_Bita.png
+[TeamHost]_Brandon.png
+[TeamHost]_Jessica.png
+[TeamHost]_Jodi.png
+[TeamHost]_Lizzy.png
+[TeamHost]_Luca.png
+[TeamHost]_Manraj.png
+[TeamHost]_Megan.png
+[TeamHost]_Melissa.png
+[TeamHost]_Naomi.png
+[TeamHost]_Russell.png
+[TeamHost]_Scott.png
+[TeamHost]_Shah.png
+[VC]_Jenny.png
+[VC]_Kyle.png
+arrow-drop-down.svg
+names.txt
