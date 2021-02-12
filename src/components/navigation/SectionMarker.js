@@ -14,7 +14,8 @@ const SectionMarker = ({ group, label, hash, children }) => {
       const entry = entries[0];
       if (entry.isIntersecting) {
         // setSectionInView(true);
-        window.history.pushState({}, "", `#${hash}`);
+        // window.history.pushState({}, "", `#${hash}`);
+        window.history.replaceState(undefined, undefined, `#${hash}`); // use this instead to prevent writing to history
         updateNav();
       } else {
         // setSectionInView(false);
