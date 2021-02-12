@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import SectionMarker from "../navigation/SectionMarker";
+import React, { Component } from "react"
+import SectionMarker from "../navigation/SectionMarker"
 
-import "@styles/main.scss";
-import EventOverviewTemplate from "@components/weekOverview/EventOverviewTemplate";
+import "@styles/main.scss"
+import EventOverviewTemplate from "@components/weekOverview/EventOverviewTemplate"
 
 const overview = () => {
   return (
@@ -13,12 +13,20 @@ const overview = () => {
         group="Week Overview"
       >
         <h1 className="display">Week Overview</h1>
-        {/* Jenny's Video */}
         <p className="lead">
           Jenny, the Vice-Chair of Competition Execution is excited for all of
           you to experience what we have planned for CaseIT 2021. Click onto an
           event below to see the details!
         </p>
+        <iframe
+          className="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/IKbDLNhWypE"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </SectionMarker>
 
       <EventOverviewTemplate
@@ -198,6 +206,6 @@ const overview = () => {
         <p>Speeches, awards, and so much more!</p>
       </EventOverviewTemplate>
     </article>
-  );
-};
-export default overview;
+  )
+}
+export default overview

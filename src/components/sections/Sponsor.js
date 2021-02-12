@@ -8,33 +8,11 @@ const sponsor = () => {
     <main>
       <h1 className="display"> Sponsors </h1>
       <div className="button-ctr">
-      <Button href="https://www.caseit.org/sponsorship/" target="_blank">
-        Sponsorship Tiers
-      </Button>
+        <Button href="https://www.caseit.org/sponsorship/" target="_blank">
+          Sponsorship Tiers
+        </Button>
       </div>
-      <div className="sponsor-ctr">
-        <div className="ad-ctr">
-          <h3> Pearson Canada </h3>
-          <p>
-            At Pearson, we’re committed to a world that’s always learning and to
-            our talented team who makes it all possible. In a fast-paced world,
-            education is the key to success and we are always re-examining the
-            way people learn best, whether it’s one child in our own backyard or
-            an education community across the globe. We are bold thinkers and
-            standout innovators who motivate each other to explore new frontiers
-            in an environment that supports and inspires us to always be better.
-            By pushing the boundaries of technology — and each other to surpass
-            these boundaries — we create seeds of learning that become the
-            catalyst for the world’s innovations, personal and global, large and
-            small.
-          </p>
-          <iframe
-            src="sponsors/pearson/Pearson_Ad.pdf"
-            width="100%"
-            height="500px"
-          ></iframe>
-        </div>
-        <div className="ad-ctr">
+      <div className="ad-ctr">
           <h3> Beedie </h3>
           <p>
             Established in 1954, Beedie has grown from humble B.C. roots to
@@ -120,30 +98,89 @@ const sponsor = () => {
             and can be seen through a variety of ongoing philanthropic endeavors
             that supports the people in our communities who need it most.
           </p>
-          <iframe src="sponsors/beedie/Beedie_Ad.pdf" width="100%" height="500px"></iframe>
+          <iframe
+            src="sponsors/beedie/Beedie_Ad.pdf"
+            width="100%"
+            height="500px"
+          ></iframe>
+        </div>
+      <div className="ad-ctr">
+          <h3> Baker Tilly WM LLP </h3>
+          <p>
+            {" "}
+            Baker Tilly WM LLP is a leading audit, tax, and advisory firm, based
+            in Vancouver and Toronto. For nearly 60 years, our firm has been
+            providing a full spectrum of business services including audit and
+            accounting, tax, business valuations, litigation support, corporate
+            finance, transfer pricing, technology, insolvency and restructuring.
+            We serve domestic and foreign corporate groups, professionals, and
+            not-for-profit organizations across a wide range of industries.{" "}
+          </p>
+          <p>
+            {" "}
+            Baker Tilly WM LLP is an independent member of Baker Tilly Canada
+            Cooperative, a network comprised of 23 member firms across Canada.{" "}
+          </p>
+        </div>
+      <div className="sponsor-ctr">
+        <div className="ad-ctr">
+          <h3> Pearson Canada </h3>
+          <h5 className="sponsor-subheader"> Silver Sponsor </h5>
+          <p>
+            At Pearson, we’re committed to a world that’s always learning and to
+            our talented team who makes it all possible. In a fast-paced world,
+            education is the key to success and we are always re-examining the
+            way people learn best, whether it’s one child in our own backyard or
+            an education community across the globe. We are bold thinkers and
+            standout innovators who motivate each other to explore new frontiers
+            in an environment that supports and inspires us to always be better.
+            By pushing the boundaries of technology — and each other to surpass
+            these boundaries — we create seeds of learning that become the
+            catalyst for the world’s innovations, personal and global, large and
+            small.
+          </p>
+          <iframe
+            src="sponsors/pearson/Pearson_Ad.pdf"
+            width="100%"
+            height="500px"
+          ></iframe>
         </div>
         <div className="ad-ctr">
           <h3> Microsoft </h3>
-          <p> Established in 1985, Microsoft Canada Inc. is the Canadian subsidiary of Microsoft Corp. (Nasdaq "MSFT"), the worldwide leader in software, services and solutions that help people and businesses realize their full potential </p>
-          <p> Recognized as one of Canada's Great Places to Work, Microsoft Canada Inc. provides nationwide sales, marketing, consulting and local support services. Headquartered in Mississauga, Microsoft Canada has nine regional offices across the country dedicated to empowering people through great software. Microsoft Canada is a creative workplace which attracts the best and brightest talent in the IT industry who bring an ever evolving vision of the future to reality.</p>
-          <p>Microsoft software helps businesses and consumers to reach their full potential, however they define it. Woven throughout daily life, whether it be work or play, Microsoft technologies flourish when they get into the hands of millions of Canadian partners and customers enabling innovation often in new ways.</p>
-          <p> Microsoft Canada is equally passionate about committing to Canadian communities. Since its inception, Microsoft Canada has had a corporate giving philosophy that goes beyond financial donations to champion inventive forms of philanthropy. For more information on how Microsoft Canada has joined forces with organizations across Canada to make a difference and invest in local communities, visit Microsoft Philanthropies.</p>
-        </div>
-        <div className="ad-ctr">
-          <h3> Baker Tilly WM LLP </h3>
-          <p> Baker Tilly WM LLP is a leading audit, tax, and advisory firm, based in Vancouver and Toronto.  For nearly 60 years, our firm has been providing a full spectrum of business services including audit and accounting, tax, business valuations, litigation support, corporate finance, transfer pricing, technology, insolvency and restructuring. We serve domestic and foreign corporate groups, professionals, and not-for-profit organizations across a wide range of industries.  </p>
-          <p> Baker Tilly WM LLP is an independent member of Baker Tilly Canada Cooperative, a network comprised of 23 member firms across Canada.  </p>
-        </div>
-        <div className="ad-ctr">
-          <h3> 88 SUPERMARKET LTD. </h3>
           <p>
-          Established in 2006, 88 Supermarket is home to one of the largest selection of ethnic foods in Greater Vancouver. We are dedicated and proud to offer food varieties from around the world as well as large selection of local North American foods at very affordable prices.
+            {" "}
+            Established in 1985, Microsoft Canada Inc. is the Canadian
+            subsidiary of Microsoft Corp. (Nasdaq "MSFT"), the worldwide leader
+            in software, services and solutions that help people and businesses
+            realize their full potential{" "}
           </p>
           <p>
-          Here, you can find daily fresh cuts of meat, fresh dairy, bakery, and live seafood at much lower prices, large selection of Asian and western foods, an extensive produce department with exotic fruits and hard to find vegetables. Our dedicated friendly staff works hard to ensure your visit to 88 Supermarket enjoyable.
-May 26th,2018 we officially opened our 2nd location located at 2611 E. 49th Ave, Vancouver. 
+            {" "}
+            Recognized as one of Canada's Great Places to Work, Microsoft Canada
+            Inc. provides nationwide sales, marketing, consulting and local
+            support services. Headquartered in Mississauga, Microsoft Canada has
+            nine regional offices across the country dedicated to empowering
+            people through great software. Microsoft Canada is a creative
+            workplace which attracts the best and brightest talent in the IT
+            industry who bring an ever evolving vision of the future to reality.
           </p>
-          <iframe src="https://drive.google.com/file/d/1ibPyqToBvQmqn2uqL2gP6gpNe8RW35fH/preview" width="640" height="480"></iframe>
+          <p>
+            Microsoft software helps businesses and consumers to reach their
+            full potential, however they define it. Woven throughout daily life,
+            whether it be work or play, Microsoft technologies flourish when
+            they get into the hands of millions of Canadian partners and
+            customers enabling innovation often in new ways.
+          </p>
+          <p>
+            {" "}
+            Microsoft Canada is equally passionate about committing to Canadian
+            communities. Since its inception, Microsoft Canada has had a
+            corporate giving philosophy that goes beyond financial donations to
+            champion inventive forms of philanthropy. For more information on
+            how Microsoft Canada has joined forces with organizations across
+            Canada to make a difference and invest in local communities, visit
+            Microsoft Philanthropies.
+          </p>
         </div>
       </div>
     </main>
