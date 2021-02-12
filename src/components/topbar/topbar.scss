@@ -1,9 +1,23 @@
-.topbar{
-    top:0;
-    width:100%;
-    position: fixed;
+@import "../../styles/layout.scss";
+
+.topbar-container {
+  position: fixed;
+  left: 0rem;
+  top: 0;
+  right: 0rem;
+  width: 100%;
+
+  z-index: 10000;
 }
 
-.welcome-txt{
-    margin-left:50%;
+.topbar {
+  margin-top: 1rem;
+}
+.logo-container {
+  img {
+    height: 2rem;
+  }
+}
+
+.welcome-txt {
 }
