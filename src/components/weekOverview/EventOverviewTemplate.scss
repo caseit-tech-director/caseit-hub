@@ -1,0 +1,26 @@
+@import "../../styles/typography.scss";
+@import "../../styles/layout.scss";
+
+.event-overview {
+  max-width: 35rem;
+}
+
+.event-info-container {
+  margin-bottom: $spacing-xl;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.event-info {
+  @extend .body;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+
+  &__label {
+    @extend .h5;
+  }
+}
