@@ -1,19 +1,19 @@
-import React from "react";
-import Chair from "../components/sections/Chair";
-import Navigation from "../components/navigation";
-import SectionMarker from "../components/navigation/SectionMarker";
-import Button from "../components/form/Button";
-import About from "../components/sections/About";
-import Overview from "../components/sections/Overview";
-import Structure from "../components/sections/Structure";
-import Tech from "../components/sections/Tech";
-import OC from "../components/sections/OC";
-import Sponsor from "../components/sections/Sponsor";
-import TopBar from "../components/topbar/topbar";
+import React from "react"
+import Chair from "../components/sections/Chair"
+import Navigation from "../components/navigation"
+import SectionMarker from "../components/navigation/SectionMarker"
+import Button from "../components/form/Button"
+import About from "../components/sections/About"
+import Overview from "../components/sections/Overview"
+import Structure from "../components/sections/Structure"
+import Tech from "../components/sections/Tech"
+import OC from "../components/sections/OC"
+import Sponsor from "../components/sections/Sponsor"
+import TopBar from "../components/topbar/topbar"
 
-import "@styles/main.scss";
-import WelcomePopup from "@components/welcomePopup/";
-import { NavigationContextProvider } from "@components/navigation/NavigationContext";
+import "@styles/main.scss"
+import WelcomePopup from "@components/welcomePopup/"
+import { NavigationContextProvider } from "@components/navigation/NavigationContext"
 
 const Home = () => {
   return (
@@ -26,8 +26,8 @@ const Home = () => {
           </div>
           <div className="main-grid__content">
             {/* dummy content for now */}
-              <h1 className="display">CaseIT 2021 Welcome Package</h1>
-              <p>presented by the Beedie School of Business</p>
+            <h1 className="display">CaseIT 2021 Welcome Package</h1>
+            <p>presented by the Beedie School of Business</p>
             <SectionMarker
               label="Letter from the Prime Minister"
               hash="letter_prime"
@@ -77,9 +77,20 @@ const Home = () => {
               group="Welcome"
             >
               <h1> Dean's Welcome </h1>
-              <p><a href="https://sfubeedie.wistia.com/medias/sxj489b9sq?wvideo=sxj489b9sq" target="_blank"><img src="https://embed-fastly.wistia.com/deliveries/33ab16655aff60160494a2d5c4306c55.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=cc0336e0" width="640" height="480"></img></a></p>
+              <p>
+                <a
+                  href="https://sfubeedie.wistia.com/medias/sxj489b9sq?wvideo=sxj489b9sq"
+                  target="_blank"
+                >
+                  <img
+                    src="https://embed-fastly.wistia.com/deliveries/33ab16655aff60160494a2d5c4306c55.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=cc0336e0"
+                    width="640"
+                    height="480"
+                  ></img>
+                </a>
+              </p>
             </SectionMarker>
-            <About/>
+            <About />
             <Overview />
             <Structure />
             <SectionMarker label="Technology" hash="tech" group="Information">
@@ -111,7 +122,7 @@ const Home = () => {
         </div>
       </NavigationContextProvider>
     </WelcomePopup>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

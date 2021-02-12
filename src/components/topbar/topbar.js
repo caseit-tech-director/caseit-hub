@@ -6,7 +6,9 @@ const topbar = () => {
     <div className="topbar-container">
       <div className="topbar center-column main-grid">
         <div className="logo-container main-grid__nav-bar">
-          <img src="images/CaseIT_Black.png" alt="CaseIT Logo" />
+          <a href="https://caseit.org">
+          <img src="images/CaseIT_Black.png" alt="CaseIT Logo"/>
+          </a>
         </div>
         {/* <div className="welcome-txt">
           <h4>

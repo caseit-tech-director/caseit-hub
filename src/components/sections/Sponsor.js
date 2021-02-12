@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Button from "../../components/form/Button"
 
 import "@styles/main.scss"
 
@@ -6,8 +7,11 @@ const sponsor = () => {
   return (
     <main>
       <h1 className="display"> Sponsors </h1>
-      <p> Tentative (link to Sponsor page)</p>
-
+      <div className="button-ctr">
+      <Button href="https://www.caseit.org/sponsorship/" target="_blank">
+        Sponsorship Tiers
+      </Button>
+      </div>
       <div className="sponsor-ctr">
         <div className="ad-ctr">
           <h3> Pearson Canada </h3>

@@ -8,16 +8,10 @@ const structure = () => {
   return (
     <main>
       <h1 className="display"> Competition Structure </h1>
-      <SectionMarker
-        group="Competition Structure"
-        hash="structure_intro"
-        label="Introduction"
-      >
         <p className="lead">
           Are you in it to win it? We lay out all you need to know case
           structure, advancement, and this year’s competition rules.
         </p>
-      </SectionMarker>
       <SectionMarker
         group="Competition Structure"
         hash="case_advancement"
@@ -97,19 +91,34 @@ const structure = () => {
           </div>
         </section>
       </SectionMarker>
-      <SectionMarker group="Competition Structure" hash="spirit" label="Spirit Awards">
-          <h2> Spirit Award </h2>
-          <p>
-          The team that best represents the values and spirit of camaraderie, enthusiasm, and dedication will be awarded the Team Spirit Award. This award will be presented to the competing team with the highest cumulative spirit score, based on attendance, performance, and engagement throughout the competition week.
-          </p>
-          <div className="button-ctr">
-          <Button href="https://drive.google.com/file/d/1LXfQ-zyq68RLcycQ2UUP-GSNa0f9EH7W/view?usp=sharing" target="_blank">
-              POINTS
+      <SectionMarker
+        group="Competition Structure"
+        hash="spirit"
+        label="Spirit Awards"
+      >
+        <h2> Spirit Award </h2>
+        <iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/2hEJygi2Pf8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>
+          The team that best represents the values and spirit of camaraderie,
+          enthusiasm, and dedication will be awarded the Team Spirit Award. This
+          award will be presented to the competing team with the highest
+          cumulative spirit score, based on attendance, performance, and
+          engagement throughout the competition week.
+        </p>
+        <div className="button-ctr">
+          <Button
+            href="https://drive.google.com/file/d/1LXfQ-zyq68RLcycQ2UUP-GSNa0f9EH7W/view?usp=sharing"
+            target="_blank"
+          >
+            POINTS
           </Button>
-          <Button href="https://drive.google.com/file/d/1Uirqqp4lHt9V3bXfzfsk1UESiGg3HISv/view?usp=sharing" target="_blank">
-              CHALLENGES
+          <Button
+            href="https://drive.google.com/file/d/1Uirqqp4lHt9V3bXfzfsk1UESiGg3HISv/view?usp=sharing"
+            target="_blank"
+          >
+            CHALLENGES
           </Button>
-          </div>
+        </div>
       </SectionMarker>
     </main>
   )
