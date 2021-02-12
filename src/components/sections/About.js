@@ -12,8 +12,8 @@ const about = () => {
         <h2> About CaseIT </h2>
         <p>
           CaseIT is the premier international management information systems
-          (MIS) business case competition hosted each year in collaboration with
-          the Beedie School of Business in Vancouver, Canada. CaseIT brings
+          (MIS) business case competition hosted each year in collaboration with the
+          <a href="https://beedie.sfu.ca" target="_blank">Beedie School of Business</a> in Vancouver, Canada. CaseIT brings
           together top undergraduate business students, distinguished faculty
           members, experienced industry professionals, and a dedicated
           student-run organizing committee to challenge conventional thinking
