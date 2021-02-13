@@ -1,11 +1,12 @@
 import React, { useRef, useEffect, useState } from "react";
-import { window } from "browser-monads"; // use brwoser monad to prevent null check in SSR
+import { window, document } from "browser-monads"; // use brwoser monad to prevent null check in SSR
 import Canvas from "./canvas";
-import { setup, draw } from "./AnimatedBackground";
+import { setup, draw, onResize } from "./AnimatedBackground";
 import "./hero.scss";
 
 const Hero = () => {
   const containerRef = useRef();
+  // alert(document.body.scrollWidth);
 
   const [heroWdith, setHeroWidth] = useState(window.innerWidth);
   const [heroHeight, setHeroHeight] = useState(window.innerHeight);
@@ -17,6 +18,10 @@ const Hero = () => {
     };
 
     window.addEventListener("resize", handleWindowResize);
+
+    // trigger the initialisation of the dots
+    setHeroWidth(window.innerWidth);
+    setHeroHeight(window.innerHeight);
 
     return () => {
       window.removeEventListener("resize", handleWindowResize);
@@ -36,6 +41,7 @@ const Hero = () => {
       <Canvas
         draw={draw}
         setup={setup}
+        onResize={onResize}
         className="hero-background"
         width={heroWdith}
         height={heroHeight}

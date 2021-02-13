@@ -23,11 +23,8 @@ a {
 /* 
  * remove horizontal scrolling for mobile
  */
-html,
 body {
-  // overflow-x: hidden;
-}
-body {
+  overflow-x: hidden;
   position: relative;
 }
 /* 

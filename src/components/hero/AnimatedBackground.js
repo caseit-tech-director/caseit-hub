@@ -5,9 +5,24 @@ const WALKER_MAX_SPEED = 0.1;
 function setup(ctx, canvasElm) {
   // init here
   // populate the points
+  points = createPointWalkers(canvasElm);
+}
+
+function createPointWalkers(canvasElm) {
+  let points = [];
   for (let i = 0; i < MAX_POINT; i++) {
     points.push(new Walker(canvasElm.width, canvasElm.height));
   }
+  return points;
+}
+
+let timeout;
+function onResize(ctx, canvasElm) {
+  // reset all the points when resize action end
+  clearTimeout(timeout);
+  timeout = setTimeout(() => {
+    points = createPointWalkers(canvasElm);
+  }, 100);
 }
 
 function draw(ctx, frameCount, canvasElm) {
@@ -74,4 +89,4 @@ function getRandom(min, max) {
   return Math.random() * (max - min + 1) + min;
 }
 
-export { setup, draw };
+export { setup, draw, onResize };

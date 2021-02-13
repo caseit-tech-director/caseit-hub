@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
 const Canvas = (props) => {
-  const { draw, setup, ...rest } = props;
+  const { draw, setup, onResize, ...rest } = props;
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -49,8 +49,15 @@ const Canvas = (props) => {
     // observe the container to see if the section is in view
     observer.observe(canvas);
 
+    // handle size change
+    const handleResize = () => {
+      if (typeof onResize === "function") onResize(context, canvas);
+    };
+    window.addEventListener("resize", handleResize);
+
     return () => {
       window.cancelAnimationFrame(animationFrameId);
+      window.removeEventListener("resize", handleResize);
       observer.unobserve(canvas);
     };
   }, [draw]);
