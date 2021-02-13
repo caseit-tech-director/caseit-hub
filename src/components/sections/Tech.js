@@ -18,10 +18,14 @@ const tech = () => {
           As CaseIT transitioned into a virtual case competition, the Organizing
           Committee researched various different methods to run the competition
           and decided on an event management platform called Hubilo which can be
-          accessed through: https://caseit2021.hubilo.com/community/.
+          accessed{" "}
+          <a href="https://caseit2021.hubilo.com/community/" target="blank">
+            here
+          </a>
+          .
         </p>
         <p>
-          Hubilo isan event management platform that is integrated with Zoom.
+          Hubilo is an event management platform that is integrated with Zoom.
           Competitors will be either redirected to a Zoom room to join their
           event or presentation, or will be able to view the event through a
           live-stream hosted on Hubilo.
