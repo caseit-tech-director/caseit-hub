@@ -74,11 +74,11 @@ $mobile-padding: $spacing-unit;
 
     &--expanded {
       img {
-        filter: invert(100%);
+        // filter: invert(100%);
         transform: rotate(180deg);
       }
-      color: var(--clr-interactive-bg);
-      background-color: var(--clr-interactive-bg--inverted);
+      color: var(--clr-interactive-text);
+      background-color: var(--clr-interactive-bg--hover);
     }
 
     @include viewportLargerThan($grid-breakpoint) {

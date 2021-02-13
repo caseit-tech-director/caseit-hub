@@ -128,6 +128,14 @@ const Navigation = () => {
     return currentSectionLabel;
   };
 
+  const toggleMenu = (e) => {
+    console.log(e.target);
+    console.log(e.currentTarget);
+    if (e.target !== e.currentTarget) return;
+
+    setIsMenuExpanded(!isMenuExpanded);
+  };
+
   return (
     <div
       className={
@@ -135,6 +143,7 @@ const Navigation = () => {
           ? "nav-container nav-container--expanded"
           : "nav-container"
       }
+      onClick={toggleMenu}
     >
       <nav className="nav">
         <button
@@ -143,9 +152,7 @@ const Navigation = () => {
               ? "nav__menu-toggle nav__menu-toggle--expanded"
               : "nav__menu-toggle"
           }
-          onClick={() => {
-            setIsMenuExpanded(!isMenuExpanded);
-          }}
+          onClick={toggleMenu}
         >
           {currentGroup && currentSection && (
             <>
