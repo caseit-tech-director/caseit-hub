@@ -5,8 +5,8 @@ import "./hero.scss";
 
 const Hero = () => {
   const containerRef = useRef();
-  const [heroWdith, setHeroWidth] = useState(window.innerWidth);
-  const [heroHeight, setHeroHeight] = useState(window.innerHeight);
+  const [heroWdith, setHeroWidth] = useState();
+  const [heroHeight, setHeroHeight] = useState();
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -15,6 +15,9 @@ const Hero = () => {
     };
 
     window.addEventListener("resize", handleWindowResize);
+
+    // initialise the canvas size
+    handleWindowResize();
 
     return () => {
       window.removeEventListener("resize", handleWindowResize);
