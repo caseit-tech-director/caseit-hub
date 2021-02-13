@@ -12,6 +12,13 @@ const Canvas = (props) => {
 
     let isPlaying = true;
 
+    // make it full screen
+    const canvasMatchWindowSize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    canvasMatchWindowSize();
+
     // for canvas initialisation
     if (typeof setup === "function") setup(context, canvas);
 
@@ -51,8 +58,7 @@ const Canvas = (props) => {
 
     // handle size change
     const handleResize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvasMatchWindowSize();
       if (typeof onResize === "function") onResize(context, canvas);
     };
     window.addEventListener("resize", handleResize);
