@@ -69,20 +69,22 @@ const Home = () => {
                 hash="letter_prime"
                 group="Welcome"
               >
-                <h2> Letter from the Prime Minister </h2>
-                <div className="button-ctr">
-                  <Button
-                    href="https://drive.google.com/file/d/1I_j5-Bf5ED9XoJxkx_0orIlrlJixR7Ky/view?usp=sharing"
-                    target="_blank"
-                  >
-                    English
-                  </Button>
-                  <Button
-                    href="https://drive.google.com/file/d/1WIrgNL1lKDTh1wG7D8EiX0py_1I_9dQE/view?usp=sharing"
-                    target="_blank"
-                  >
-                    French
-                  </Button>
+                <div className="center-layout">
+                  <h3> Letter from the Prime Minister </h3>
+                  <div className="button-ctr">
+                    <Button
+                      href="https://drive.google.com/file/d/1I_j5-Bf5ED9XoJxkx_0orIlrlJixR7Ky/view?usp=sharing"
+                      target="_blank"
+                    >
+                      English
+                    </Button>
+                    <Button
+                      href="https://drive.google.com/file/d/1WIrgNL1lKDTh1wG7D8EiX0py_1I_9dQE/view?usp=sharing"
+                      target="_blank"
+                    >
+                      French
+                    </Button>
+                  </div>
                 </div>
               </SectionMarker>
               <SectionMarker
@@ -90,14 +92,16 @@ const Home = () => {
                 hash="letter_premier"
                 group="Welcome"
               >
-                <h2> Letter from the Premier </h2>
-                <div className="button-ctr">
-                  <Button
-                    href="https://drive.google.com/file/d/1PDYFtERFVBEakLZ7vfbMVv6KA1un7V_l/view?usp=sharing"
-                    target="_blank"
-                  >
-                    English
-                  </Button>
+                <div className="center-layout">
+                  <h3> Letter from the Premier </h3>
+                  <div className="button-ctr">
+                    <Button
+                      href="https://drive.google.com/file/d/1PDYFtERFVBEakLZ7vfbMVv6KA1un7V_l/view?usp=sharing"
+                      target="_blank"
+                    >
+                      English
+                    </Button>
+                  </div>
                 </div>
               </SectionMarker>
               <SectionMarker

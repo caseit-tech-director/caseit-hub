@@ -7,15 +7,15 @@ const Welcome = () => {
     <main>
       <h2>Chair's Welcome</h2>
       <YoutubeVideo src="https://www.youtube.com/embed/V0aajXvxx64" />
+      <p>
+        It is our pleasure to welcome you to CaseIT 2021. Hosted in
+        collaboration with the Beedie School of Business at Simon Fraser
+        University, CaseIT is the world’s premier International Undergraduate
+        Management Information Systems Business Case Competition. CaseIT has
+        welcomed 872 undergraduate competitors representing 47 universities from
+        19 different countries to compete in Vancouver since 2004.
+      </p>
       <section>
-        <p>
-          It is our pleasure to welcome you to CaseIT 2021. Hosted in
-          collaboration with the Beedie School of Business at Simon Fraser
-          University, CaseIT is the world’s premier International Undergraduate
-          Management Information Systems Business Case Competition. CaseIT has
-          welcomed 872 undergraduate competitors representing 47 universities
-          from 19 different countries to compete in Vancouver since 2004.
-        </p>
         <p>
           The CaseIT 2021 Organizing Committee is composed of top students from
           a multitude of faculties at Simon Fraser University. As this year

@@ -123,6 +123,20 @@ p {
 //   margin-bottom: $spacing-m;
 // }
 
+.center-layout {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: $spacing-xxl;
+  margin-bottom: $spacing-xxl;
+
+  & > * {
+    margin-bottom: $spacing-l;
+  }
+}
+
 .section,
 article {
   margin-bottom: $spacing-m;
