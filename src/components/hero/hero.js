@@ -13,6 +13,8 @@ const Hero = () => {
 
   useEffect(() => {
     const handleWindowResize = () => {
+      alert(window.innerWidth);
+      alert(window.innerHeight);
       setHeroWidth(window.innerWidth);
       setHeroHeight(window.innerHeight);
     };
