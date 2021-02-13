@@ -1,12 +1,14 @@
 import React, { useRef, useEffect, useState } from "react";
+import { window } from "browser-monads"; // use brwoser monad to prevent null check in SSR
 import Canvas from "./canvas";
 import { setup, draw } from "./AnimatedBackground";
 import "./hero.scss";
 
 const Hero = () => {
   const containerRef = useRef();
-  const [heroWdith, setHeroWidth] = useState();
-  const [heroHeight, setHeroHeight] = useState();
+
+  const [heroWdith, setHeroWidth] = useState(window.innerWidth);
+  const [heroHeight, setHeroHeight] = useState(window.innerHeight);
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -15,9 +17,6 @@ const Hero = () => {
     };
 
     window.addEventListener("resize", handleWindowResize);
-
-    // initialise the canvas size
-    handleWindowResize();
 
     return () => {
       window.removeEventListener("resize", handleWindowResize);
