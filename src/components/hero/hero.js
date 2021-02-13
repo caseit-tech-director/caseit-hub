@@ -8,26 +8,6 @@ const Hero = () => {
   const containerRef = useRef();
   // alert(document.body.scrollWidth);
 
-  const [heroWdith, setHeroWidth] = useState(window.innerWidth);
-  const [heroHeight, setHeroHeight] = useState(window.innerHeight);
-
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setHeroWidth(window.innerWidth);
-      setHeroHeight(window.innerHeight);
-    };
-
-    window.addEventListener("resize", handleWindowResize);
-
-    // trigger the initialisation of the dots
-    setHeroWidth(window.innerWidth);
-    setHeroHeight(window.innerHeight);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-
   return (
     <div ref={containerRef} className="hero">
       <h1 className="welcome">CaseIT 2021 Welcome Package</h1>
@@ -43,8 +23,6 @@ const Hero = () => {
         setup={setup}
         onResize={onResize}
         className="hero-background"
-        width={heroWdith}
-        height={heroHeight}
       />
     </div>
   );

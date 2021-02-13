@@ -51,6 +51,8 @@ const Canvas = (props) => {
 
     // handle size change
     const handleResize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
       if (typeof onResize === "function") onResize(context, canvas);
     };
     window.addEventListener("resize", handleResize);
