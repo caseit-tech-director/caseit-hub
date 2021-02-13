@@ -74,6 +74,15 @@ $timezone-label-width: 20%;
     height: 100%;
     right: $spacing-unit;
     width: 1.5rem;
+
+    transition-property: transform, filter;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+
+    &--expanded {
+      filter: invert(100%);
+      transform: rotate(180deg);
+    }
   }
 }
 
