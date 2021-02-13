@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <WelcomePopup>
       <NavigationContextProvider>
-        {/* <TopBar /> */}
+        <TopBar />
         <div className="main-grid center-column">
           <div className="main-grid__nav">
             <Navigation />
