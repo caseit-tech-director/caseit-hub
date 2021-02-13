@@ -28,8 +28,16 @@ const overview = () => {
         group="Week Overview"
       >
         <h2> Competition Schedule </h2>
-        <img src="images/schedule_NA.png" alt="Session 1 Schedule"></img>
-        <img src="images/schedule_NA.png" alt="Session 2 Schedule"></img>
+        <img
+          src="images/schedule_NA.png"
+          alt="Session 1 Schedule"
+          loading="lazy"
+        ></img>
+        <img
+          src="images/schedule_NA.png"
+          alt="Session 2 Schedule"
+          loading="lazy"
+        ></img>
       </SectionMarker>
 
       <EventOverviewTemplate

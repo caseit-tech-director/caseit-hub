@@ -186,6 +186,7 @@ const TimezonePicker = ({
             )}
           </div>
           <img
+            loading="lazy"
             className={
               isExpanded
                 ? "timezone-picker__drop-icon timezone-picker__drop-icon--expanded"

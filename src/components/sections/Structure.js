@@ -17,6 +17,7 @@ const structure = () => {
         className="image"
         src="images/comp_structure.png"
         alt="Competition Structure"
+        loading="lazy"
       ></img>
       <SectionMarker
         group="Competition Structure"
@@ -40,6 +41,7 @@ const structure = () => {
             className="image"
             src="images/comp_advancement.png"
             alt="Competition Advancement"
+            loading="lazy"
           ></img>
         </section>
       </SectionMarker>

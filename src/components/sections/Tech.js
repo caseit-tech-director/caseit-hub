@@ -1,13 +1,18 @@
-import React, { Component } from "react"
-import Button from "../form/Button"
+import React, { Component } from "react";
+import Button from "../form/Button";
 
-import "@styles/main.scss"
+import "@styles/main.scss";
 
 const tech = () => {
   return (
     <main>
       <h1 className="display"> Technology </h1>
-      <img className="images" src="images/hubilo.png" alt="hubilo"></img>
+      <img
+        className="images"
+        src="images/hubilo.png"
+        alt="hubilo"
+        loading="lazy"
+      ></img>
       <section>
         <p>
           As CaseIT transitioned into a virtual case competition, the Organizing
@@ -100,12 +105,15 @@ const tech = () => {
           platform, and many more.
         </p>
         <div className="button-ctr">
-        <Button href="https://drive.google.com/file/d/19vgAlrJp1adcDqn8AwOoEUzE4NWz3UL3/view?usp=sharing" target="_blank">
-          TECHNOLOGY REQUIREMENTS GUIDE
-        </Button>
+          <Button
+            href="https://drive.google.com/file/d/19vgAlrJp1adcDqn8AwOoEUzE4NWz3UL3/view?usp=sharing"
+            target="_blank"
+          >
+            TECHNOLOGY REQUIREMENTS GUIDE
+          </Button>
         </div>
       </section>
     </main>
-  )
-}
-export default tech
+  );
+};
+export default tech;
