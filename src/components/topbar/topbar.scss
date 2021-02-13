@@ -10,15 +10,15 @@
   width: 100%;
 
   @include viewportSmallerThan($grid-breakpoint) {
-    background-color: #fff;
+    // background-color: #fff;
   }
 
   z-index: 10000;
 }
 
 .topbar {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  // padding-top: 1rem;
+  // padding-bottom: 1rem;
   @include viewportLargerThan($grid-breakpoint) {
     padding-top: 2rem;
     padding-bottom: 2rem;
