@@ -106,7 +106,7 @@ const WelcomePopup = ({ children }) => {
           )}
         </AnimatePresence>
       </div>
-      <div style={{ display: isFontLoaded ? "none" : "block" }}>
+      <div style={{ display: isFontLoaded ? "block" : "none" }}>
         {!isShowingPopup && children}
       </div>
     </>
