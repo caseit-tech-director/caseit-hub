@@ -18,8 +18,6 @@ const Canvas = (props) => {
     const render = () => {
       if (!isPlaying) return;
 
-      console.log("rendering...");
-
       frameCount++;
       draw(context, frameCount, canvasRef.current);
       animationFrameId = window.requestAnimationFrame(render);

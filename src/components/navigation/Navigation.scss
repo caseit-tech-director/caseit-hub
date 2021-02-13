@@ -1,11 +1,117 @@
+@import "@styles/responsive.scss";
 @import "@styles/layout.scss";
 @import "@styles/typography.scss";
 
 $accent-strip-size: 2px;
+$mobile-padding: $spacing-unit;
+
+.nav-container {
+  height: auto;
+
+  &--expanded {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    overflow-y: auto;
+  }
+  @include viewportLargerThan($grid-breakpoint) {
+    background-color: transparent;
+    height: auto;
+    overflow-y: auto;
+  }
+}
 
 .nav {
   display: flex;
   flex-direction: column;
+
+  /**
+   * 
+   * For implementing mobile nav bar
+   * 
+   */
+  color: var(--clr-text);
+  background-color: var(--clr-bg);
+  // height: 100vh;
+  @include viewportLargerThan($grid-breakpoint) {
+    margin-top: 0rem;
+  }
+
+  // box shadow for mobile nav bar to make the nav menu look clickable
+  box-shadow: none;
+  @include viewportLargerThan($grid-breakpoint) {
+    box-shadow: none;
+  }
+  &--scrolled {
+    // box-shadow: var(--drop-shadow-elevated);
+  }
+  // transition animation
+  transition-property: box-shadow;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+
+  &__menu-toggle {
+    // layout
+    display: block;
+    padding: $mobile-padding;
+    text-align: left;
+
+    // reset the button look
+    background: transparent;
+    border: none;
+
+    // push the icon to the right
+    img {
+      // for icon rotate
+      transition-property: transform, filter;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+      float: right;
+    }
+
+    transition-property: color, background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+
+    &--expanded {
+      img {
+        filter: invert(100%);
+        transform: rotate(180deg);
+      }
+      color: var(--clr-interactive-bg);
+      background-color: var(--clr-interactive-bg--inverted);
+    }
+
+    @include viewportLargerThan($grid-breakpoint) {
+      display: none;
+    }
+  }
+
+  // the menu items
+  &__menu {
+    transition-property: height;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+
+    @include viewportSmallerThan($grid-breakpoint) {
+      height: 0vh;
+      display: block;
+      overflow-y: hidden;
+
+      padding-left: $mobile-padding;
+      padding-right: $mobile-padding;
+
+      // seperator
+      border-top: 1px solid #ccc;
+
+      // give it some space between
+      div:first-child {
+        padding-top: $mobile-padding;
+      }
+      &--expanded {
+        height: 70vh;
+      }
+    }
+  }
 }
 
 /**
@@ -16,8 +122,6 @@ $accent-strip-size: 2px;
 .nav-group {
   display: flex;
   flex-direction: column;
-  left: 0;
-  height: 100%;
 
   &__toggle {
     @extend .nav-item;
