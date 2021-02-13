@@ -129,11 +129,12 @@ const Navigation = () => {
   };
 
   const toggleMenu = (e) => {
-    console.log(e.target);
-    console.log(e.currentTarget);
-    if (e.target !== e.currentTarget) return;
-
     setIsMenuExpanded(!isMenuExpanded);
+  };
+
+  const exitMenu = (e) => {
+    if (e.target !== e.currentTarget) return;
+    setIsMenuExpanded(false);
   };
 
   return (
@@ -143,7 +144,7 @@ const Navigation = () => {
           ? "nav-container nav-container--expanded"
           : "nav-container"
       }
-      onClick={toggleMenu}
+      onClick={exitMenu}
     >
       <nav className="nav">
         <button

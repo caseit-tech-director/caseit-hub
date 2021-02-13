@@ -106,7 +106,7 @@ const WelcomePopup = ({ children }) => {
           )}
         </AnimatePresence>
       </div>
-      <div className={isShowingPopup && "main-content--hidden"}>
+      <div style={{ display: !isShowingPopup ? "block" : "none" }}>
         {!isShowingPopup && children}
       </div>
     </>
