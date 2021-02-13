@@ -110,6 +110,7 @@ $mobile-padding: $spacing-unit;
       }
       &--expanded {
         height: 70vh;
+        overflow-y: hidden;
       }
     }
   }

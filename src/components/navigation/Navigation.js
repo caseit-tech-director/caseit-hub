@@ -167,6 +167,14 @@ const Navigation = () => {
           className={
             isMenuExpanded ? "nav__menu nav__menu--expanded" : "nav__menu"
           }
+          onTransitionEnd={(e) => {
+            // if it is expaneded
+            if (e.currentTarget.className === "nav__menu nav__menu--expanded") {
+              e.currentTarget.style.overflowY = "auto";
+            } else {
+              e.currentTarget.style.overflowY = "hidden";
+            }
+          }}
         >
           <AnimateSharedLayout>
             {navMenu.map((group, groupIndex) => {
