@@ -72,7 +72,6 @@ const WelcomePopup = ({ children }) => {
           {isShowingPopup && (
             <motion.div
               className="welcome-popup"
-              style={{ backgroundColor: "#000" }}
               exit={{ opacity: 0, transition: { delay: 0.1 } }}
             >
               <motion.div
@@ -107,8 +106,8 @@ const WelcomePopup = ({ children }) => {
           )}
         </AnimatePresence>
       </div>
-      <div className={isShowingPopup ? "main-content--hidden" : ""}>
-        {children}
+      <div className={isShowingPopup && "main-content--hidden"}>
+        {!isShowingPopup && children}
       </div>
     </>
   );

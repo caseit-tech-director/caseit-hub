@@ -19,6 +19,10 @@ function createPointWalkers(canvasElm) {
 let timeout;
 function onResize(ctx, canvasElm) {
   // reset all the points when resize action end
+
+  console.log(canvasElm.width);
+  console.log(canvasElm.height);
+
   clearTimeout(timeout);
   timeout = setTimeout(() => {
     points = createPointWalkers(canvasElm);
