@@ -30,12 +30,12 @@ const overview = () => {
         <h2> Competition Schedule </h2>
         <img
           src="images/schedule_NA.png"
-          alt="Session 1 Schedule"
+          alt="North America Schedule"
           loading="lazy"
         ></img>
         <img
-          src="images/schedule_NA.png"
-          alt="Session 2 Schedule"
+          src="images/schedule_EU-or-ASIA.png"
+          alt="EU or Asia Schedule"
           loading="lazy"
         ></img>
       </SectionMarker>
