@@ -54,7 +54,7 @@ const WelcomePopup = ({ children }) => {
   // for determining whether the popup should be showned or not
   const [isShowingPopup, setIsShowingPopup] = useState(
     // show popup only in the first time visit
-    (isFirstTimeVisit && ONLY_SHOW_WELCOME_ONCE) || isUniversityExist
+    isFirstTimeVisit && ONLY_SHOW_WELCOME_ONCE && isUniversityExist
   );
   // for preventing Flash of unstayled text on the welcome screen
   const isFontLoaded = useIsFontLoaded();
