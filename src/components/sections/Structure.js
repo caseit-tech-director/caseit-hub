@@ -1,18 +1,23 @@
-import React, { Component } from "react"
-import Button from "../form/Button"
-import SectionMarker from "../navigation/SectionMarker"
+import React, { Component } from "react";
+import Button from "../form/Button";
+import SectionMarker from "../navigation/SectionMarker";
+import YoutubeVideo from "../youtubeVideo/YoutubeVideo";
 
-import "@styles/main.scss"
+import "@styles/main.scss";
 
 const structure = () => {
   return (
     <main>
       <h1 className="display"> Competition Structure </h1>
-        <p className="lead">
-          Are you in it to win it? We lay out all you need to know case
-          structure, advancement, and this year’s competition rules.
-        </p>
-        <img className="image" src="images/comp_structure.png" alt="Competition Structure"></img>
+      <p className="lead">
+        Are you in it to win it? We lay out all you need to know case structure,
+        advancement, and this year’s competition rules.
+      </p>
+      <img
+        className="image"
+        src="images/comp_structure.png"
+        alt="Competition Structure"
+      ></img>
       <SectionMarker
         group="Competition Structure"
         hash="case_advancement"
@@ -31,7 +36,11 @@ const structure = () => {
             the winner is based on the combined Case I and Case II scores. Below
             is the advancement structure for CaseIT 2021.
           </p>
-          <img className="image" src="images/comp_advancement.png" alt="Competition Advancement"></img>
+          <img
+            className="image"
+            src="images/comp_advancement.png"
+            alt="Competition Advancement"
+          ></img>
         </section>
       </SectionMarker>
       <SectionMarker
@@ -98,7 +107,7 @@ const structure = () => {
         label="Spirit Awards"
       >
         <h2> Spirit Award </h2>
-        <iframe className="video" width="560" height="315" src="https://www.youtube.com/embed/2hEJygi2Pf8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <YoutubeVideo src="https://www.youtube.com/embed/2hEJygi2Pf8" />
         <p>
           The team that best represents the values and spirit of camaraderie,
           enthusiasm, and dedication will be awarded the Team Spirit Award. This
@@ -122,6 +131,6 @@ const structure = () => {
         </div>
       </SectionMarker>
     </main>
-  )
-}
-export default structure
+  );
+};
+export default structure;

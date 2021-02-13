@@ -1,9 +1,9 @@
-import React, { Component } from "react"
-import SectionMarker from "../navigation/SectionMarker"
+import React, { Component } from "react";
+import SectionMarker from "../navigation/SectionMarker";
 
-
-import "@styles/main.scss"
-import EventOverviewTemplate from "@components/weekOverview/EventOverviewTemplate"
+import "@styles/main.scss";
+import EventOverviewTemplate from "@components/weekOverview/EventOverviewTemplate";
+import YoutubeVideo from "@components/youtubeVideo/YoutubeVideo";
 
 const overview = () => {
   return (
@@ -19,21 +19,17 @@ const overview = () => {
           you to experience what we have planned for CaseIT 2021. Click onto an
           event below to see the details!
         </p>
-        <iframe
-          className="video"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/IKbDLNhWypE"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <YoutubeVideo src="https://www.youtube.com/embed/IKbDLNhWypE" />
       </SectionMarker>
 
-      <SectionMarker label="Competition Schedule" hash="schedule" group="Week Overview">
-      <h2> Competition Schedule </h2>
-      <img src="images/schedule_NA.png" alt="Session 1 Schedule"></img>
-      <img src="images/schedule_NA.png" alt="Session 2 Schedule"></img>
+      <SectionMarker
+        label="Competition Schedule"
+        hash="schedule"
+        group="Week Overview"
+      >
+        <h2> Competition Schedule </h2>
+        <img src="images/schedule_NA.png" alt="Session 1 Schedule"></img>
+        <img src="images/schedule_NA.png" alt="Session 2 Schedule"></img>
       </SectionMarker>
 
       <EventOverviewTemplate
@@ -218,6 +214,6 @@ const overview = () => {
         <p>Speeches, awards, and so much more!</p>
       </EventOverviewTemplate>
     </article>
-  )
-}
-export default overview
+  );
+};
+export default overview;
