@@ -11,7 +11,7 @@ import "./WelcomePopup.scss";
 import "./pulsingCaseitDot.scss";
 
 const INTRO_TEXT_PAUSE_TIME = 5000; // 5 seconds
-const ONLY_SHOW_WELCOME_ONCE = false;
+const ONLY_SHOW_WELCOME_ONCE = true;
 
 // the animation of the text container
 const container = {

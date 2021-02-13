@@ -1,6 +1,6 @@
 let points = [];
 const MAX_POINT = 10;
-const WALKER_MAX_SPEED = 0.1;
+const WALKER_MAX_SPEED = 0.01;
 
 function setup(ctx, canvasElm) {
   // init here
