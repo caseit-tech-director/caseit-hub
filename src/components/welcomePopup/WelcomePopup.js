@@ -69,7 +69,7 @@ const WelcomePopup = ({ children }) => {
     <>
       <div>
         <AnimatePresence>
-          {isShowingPopup && (
+          {isShowingPopup && isFontLoaded && (
             <motion.div
               className="welcome-popup"
               exit={{ opacity: 0, transition: { delay: 0.1 } }}
