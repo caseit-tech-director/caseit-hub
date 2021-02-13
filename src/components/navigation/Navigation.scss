@@ -34,6 +34,7 @@ $mobile-padding: $spacing-unit;
   // height: 100vh;
   @include viewportLargerThan($grid-breakpoint) {
     margin-top: 0rem;
+    background-color: transparent;
   }
 
   // box shadow for mobile nav bar to make the nav menu look clickable
