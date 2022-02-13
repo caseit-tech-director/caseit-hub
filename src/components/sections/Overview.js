@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import SectionMarker from "../navigation/SectionMarker";
+import React, { Component } from "react"
+import SectionMarker from "../navigation/SectionMarker"
 
-import "@styles/main.scss";
-import EventOverviewTemplate from "@components/weekOverview/EventOverviewTemplate";
-import YoutubeVideo from "@components/youtubeVideo/YoutubeVideo";
+import "@styles/main.scss"
+import EventOverviewTemplate from "@components/weekOverview/EventOverviewTemplate"
+import YoutubeVideo from "@components/youtubeVideo/YoutubeVideo"
 
 const overview = () => {
   return (
@@ -15,9 +15,9 @@ const overview = () => {
       >
         <h1 className="display">Week Overview</h1>
         <p className="lead">
-          Jenny, the Vice-Chair of Competition Execution is excited for all of
-          you to experience what we have planned for CaseIT 2021. Click onto an
-          event below to see the details!
+          Rachel Dee, the Vice-Chair of Competition Execution is excited for all
+          of you to experience what we have planned for CaseIT 2022. Keep
+          reading to see what to expect!
         </p>
         <YoutubeVideo src="https://www.youtube.com/embed/IKbDLNhWypE" />
       </SectionMarker>
@@ -46,182 +46,250 @@ const overview = () => {
         attendance="Mandatory"
         hashName="ready_for_it"
       >
+        <h5>Description</h5>
         <p>
-          ReadyForIT is the first event of the competition week, and is composed
-          of two parts. The first part—the Division Draw—is mandatory for all
-          coaches and case competitors to attend. The Division Draw will
-          determine the competing divisions, as well as the logistics for the
-          deliberation periods and presentations.
-        </p>
-        <p>
-          The second part of the event is social, and is intended for case
-          competitors to get to know one another, and participate in some
-          friendly competition ahead of the academic cases. Although this
-          portion of the event is only for case competitors, we invite coaches
-          to attend the Coaches events, which will be held during both case
-          deliberation periods.
+          ReadyForIT is the first event of the competition week, and consists of
+          welcome remarks, introductions and the Division Draw. This event is
+          mandatory for all coaches and case competitors to attend. The Division
+          Draw will determine the competing divisions, as well as the logistics
+          for the deliberation periods and presentations.
         </p>
         <div>
-          <h5>What To Expect</h5>
-          <p>
-            ReadyForIT will occur through two synchronous sessions. We welcome
-            case competitors and coaches to attend the session that corresponds
-            with their timezone stagger, as specified above.{" "}
-          </p>
+          <h5>How to Join?</h5>
+          <img
+            src="images/2022/hubilo.png"
+            alt="EU or Asia Schedule"
+            loading="lazy"
+          ></img>
         </div>
-
-        <h5>What To Bring</h5>
-        <p>
-          For the social component, we ask case competitors to bring an item
-          that represents yourself, your school or your hometown—whether this be
-          a souvenir, a school sweater, or a special personal item.
-        </p>
       </EventOverviewTemplate>
+
       <EventOverviewTemplate
-        eventName="PaintIT"
+        eventName="PlayIT"
         dressCode="Casual"
         attendance="Highly Recommended"
-        hashName="paint_it"
+        hashName="play_it"
       >
+        <h5>Date and Times</h5>
         <p>
-          In between the two cases, take a moment to unwind and connect with
-          fellow-case competitors and team hosts at PaintIT, a Vancouver-themed
-          paint event! PaintIT is also an opportunity for case competitors to
-          learn more about what Vancouver has to offer, in both its art scene
-          and landscapes.
+          <ul>
+            <li>Sunday, February 20, 2022 at 12:00PM PST</li>
+            <li>Monday, February 21, 2022 at 2:00PM PST</li>
+            <li>Wednesday, February 23, 2022 at 9:00AM PST</li>
+            <li>Friday, February 25, 2022 at 8:00PM PST</li>
+          </ul>
+        </p>
+        <h5>Description</h5>
+        <p>
+          PlayIT is a casual, social event intended for case competitors to get
+          to know one another, and participate in some friendly competition
+          ahead of the academic cases. Participation is highly recommended as
+          competitors will be awarded spirit points throughout the event!
         </p>
 
         <h5>What To Expect</h5>
         <p>
+          There will be various multiplayer games to join using the platform,
+          Discord. There will be separate voice calls and channels to join when
+          playing the virtual games that are prepared for the competitors and
+          team hosts. All of the games will include a host who will explain the
+          rules and moderate the games.
+        </p>
+
+        <h5>How to Join?</h5>
+        <p>
           <ul>
             <li>
-              PaintIT will occur through two synchronous sessions. We welcome
-              case competitors to attend the session that corresponds with their
-              timezone stagger.
+              Create a Discord account and join using the following link:
+              <a href="https://discord.gg/a38SB3nP6T" target="_blank">
+                https://discord.gg/a38SB3nP6T
+              </a>
             </li>
             <li>
-              Breakout room rotations will allow case competitors to have casual
-              conversations with other case competitors and team hosts while
-              they work away at their paintings.
+              Naming Convention: First Name, Last Initial - School Abbreviation
             </li>
             <li>
-              A post-event gallery walk will allow case competitors to showcase
-              their artwork and creativity, while contributing to their team’s
-              spirit point score! This will be facilitated through the “Event
-              Feed” tab on the event platform.
+              To change your discord server name, follow the instructions
+              provided here:
+              <a
+                href="https://www.businessinsider.com/how-to-change-nickname-on-discord"
+                target="_blank"
+              >
+                https://www.businessinsider.com/how-to-change-nickname-on-discord
+              </a>
             </li>
           </ul>
         </p>
-
-        <h5>What To Bring</h5>
-        <p>
-          Everything you need to create beautiful, original artwork, was sent in
-          the competitor welcome boxes. If your package did not arrive in-time,
-          please reach out to our team for the opportunity to create digital art
-          at PaintIT!
-        </p>
       </EventOverviewTemplate>
       <EventOverviewTemplate
-        eventName="RaceIT: A Virtual Amazing Race"
+        eventName="Discover Vancouver: A Virtual Scavenger Hunt"
         dressCode="Casual"
         attendance="Highly Recommended"
-        hashName="race_it"
+        hashName="discover_it"
       >
+        <h5>Description</h5>
         <p>
-          RaceIT: A Virtual Amazing Race, allows teams to discover some of
-          Vancouver’s iconic landmarks and neighbourhoods in a virtual
-          environment. This is an asynchronous activity, which means that your
-          team can complete RaceIT at a convenient time during one of the first
-          four days of the competition.
+          Take a tour through downtown Vancouver by partaking in a virtual
+          scavenger hunt with your team! Teams will be able to discover some of
+          Vancouver’s iconic landmarks and neighbourhoods through Google Maps by
+          solving riddles and racing to finish the scavenger hunt the fastest.
+          The team that finishes with the quickest time will earn major spirit
+          points!
         </p>
         <h5>What To Expect</h5>
         <p>
           <ul>
             <li>
-              RaceIT puts your problem-solving skills and agility to the test.
-              Teams will solve clues and complete activities to advance to the
-              next leg of the race, and finally, to the finish line!
+              Discover Vancouver puts your problem-solving skills and agility to
+              the test. Teams will solve clues to advance to the next leg of the
+              scavenger hunt, and finally, to the finish line!
             </li>
             <li>
-              RaceIT will be facilitated by your Team Host, and the rankings
-              will be posted on the event platform prior to the end of the
-              competition week.
+              This event will be facilitated by your Team Host in Zoom breakout
+              rooms
             </li>
           </ul>
         </p>
+      </EventOverviewTemplate>
+      <EventOverviewTemplate
+        eventName="MixIT - Mocktail Night"
+        dressCode="Casual"
+        attendance="Highly Recommended"
+        hashName="mix_it"
+      >
+        <h5>Date and Times</h5>
+        <p>
+          <ul>
+            <li>Monday, February 21, 2022 at 12:00PM PST</li>
+          </ul>
+        </p>
+        <h5>Description</h5>
+        <p>
+          Before the two cases, take a moment to unwind and connect with fellow
+          case competitors and team hosts at MixIT, a mocktail night event! You
+          will be provided a mocktail kit and will be creating drinks together
+          over a virtual Mocktail Happy Hour!
+        </p>
+
+        <h5>What To Expect</h5>
+        <ul>
+          <li>
+            MixIT will occur for two hours. There will be guided instruction on
+            how to create your mocktails hosted over Zoom.
+          </li>
+          <li>
+            There will be breakout rooms with question prompts for teams to
+            engage with each other in a casual setting while sipping on
+            delicious mocktails.
+          </li>
+        </ul>
 
         <h5>What To Bring</h5>
-        <p>
-          Please communicate with your Team Host as to the time and date that
-          your team wishes to partake in RaceIT. Your Team Host will then send a
-          meeting link where the race will occur.
-        </p>
+        <ul>
+          <li>
+            The mocktail kits will include four different flavors of Craftmix
+            packets that will help teams create their mocktails. There will also
+            be some other items included to help competitors during the MixIT
+            event!
+          </li>
+          <li>
+            If possible, competitors are recommended to bring a bottle of
+            flavored or unflavored sparkling water to the event.{" "}
+          </li>
+        </ul>
       </EventOverviewTemplate>
       <EventOverviewTemplate
         eventName="Sponsor Networking"
         dressCode="Business Casual"
         attendance="Highly Recommended"
-        hashName="networking"
+        hashName="awards_ceremony"
       >
+        <h5>Description</h5>
         <p>
-          We are delighted to present Sponsor Networking at CaseIT 2021, which
-          will be facilitated through “coffee chat” style networking sessions.
-          These sessions will pair an industry professional from one of our
-          sponsor companies with a case competitor from one of our competing
-          universities. This event connects top business students from around
-          the world with industry professionals that have experience in various
-          fields of business and technology.
+          We are delighted to present Sponsor Networking at CaseIT 2022, which
+          will allow our competitors to connect with numerous industry
+          professionals. Those who sign up for our Networking Coffee Chats, will
+          be placed in a group with other competitors, which would then rotate
+          together through 4 different Industry professional’s breakout rooms.
+          This event connects top business students from around the world with
+          industry professionals that have experience in various fields of
+          business and technology.
         </p>
 
         <h5>What To Expect</h5>
         <ul>
           <li>
-            Sponsor Networking sessions will be one-on-one conversations between
-            industry professionals and case competitors. This is an opportunity
-            to make a meaningful connection with the industry professional that
-            you sign-up to network with.
+            Competitors can expect to receive a sign-up sheet from their team
+            hosts, which would then enroll them in our Sponsor Networking Coffee
+            Chats. A meeting link and session confirmation email will be sent to
+            participants prior to the competitions.
           </li>
-          <li>Please refrain from disclosing your school during your chat.</li>
-          <li>
-            A meeting link and session confirmation email will be sent to
-            participants.
-          </li>
-          <li>Sessions will last for 20 minutes.</li>
+          <li>Sessions will last for 15 minutes</li>
         </ul>
 
-        <h5>What To Bring</h5>
+        <h5>What to Bring</h5>
         <p>
           Questions tailored to the field/industry of the professional you are
-          networking with
+          networking with.
         </p>
-
-        <h5>How to Join</h5>
+        <h5>What to Do</h5>
         <ul>
+          <li>Fill out Sign-Up Google Form sent to you by your Team Host</li>
           <li>
-            Sign up for a networking session, a sign-up link will be set out.{" "}
-          </li>
-          <li>
-            Read the sponsor representative profiles to prepare for your
-            networking session.
+            Build a profile on the Industry Professionals you are meeting.
           </li>
         </ul>
       </EventOverviewTemplate>
       <EventOverviewTemplate
-        eventName="Awards Ceremony"
-        dressCode="Smart casual, or as you would dress for an awards banquet!"
+        eventName="Coaches Event"
+        dressCode="Smart Casual"
         attendance="Highly Recommended"
         hashName="awards_ceremony"
       >
+        <h5>Date and Times</h5>
         <p>
-          The Awards Ceremony concludes the CaseIT 2021 competition week, and is
+          <ul>
+            <li>Thursday, February 24 at 10:00 AM PST</li>
+          </ul>
+        </p>
+        <h5>Description</h5>
+        <p>
+          This event is to provide coaches with the opportunity to form and
+          build connections with other fellow coaches, while participating in
+          activities and conversations. Activities will include icebreakers,
+          trivia and breakout rooms to be able to chat with others in smaller
+          settings.
+        </p>
+      </EventOverviewTemplate>
+      <EventOverviewTemplate
+        eventName="Awards Banquet"
+        dressCode="Semi-Formal or Gala Attire"
+        attendance="Mandatory"
+        hashName="awards_ceremony"
+      >
+        <h5>Date and Times</h5>
+        <p>
+          <ul>
+            <li>Friday, February 25, 2022 at 7:00PM PST</li>
+          </ul>
+        </p>
+        <h5>Description</h5>
+        <p>
+          The Awards Ceremony concludes the CaseIT 2022 competition week, and is
           a time to celebrate your achievements and hard work leading up to and
           throughout the competition week! Additionally, the winners of CaseIT
-          2021 will be announced and recognized.
+          2022 will be announced and recognized.
         </p>
-        <h5>What To Expect</h5>
-        <p>Speeches, awards, and so much more!</p>
+        <h5>What to Expect</h5>
+        <p>
+          The Awards Banquet will feature various speeches from CaseIT 2022
+          sponsors, SFU Beedie faculty members, and CaseIT organizing committee
+          members. This event will recognize the achievements of the CaseIT 2022
+          competing teams and ultimately announce the winning teams of CaseIT
+          2022.
+        </p>
       </EventOverviewTemplate>
     </article>
-  );
-};
-export default overview;
+  )
+}
+export default overview

@@ -2,7 +2,7 @@ const EventTimes = {
   ReadyForIT: [
     {
       name: "session 1",
-      vancouverTime: "2021-2-14 6:00",
+      vancouverTime: "2021-2-20 11:00",
       timezones: ["GMT-8", "GMT+1", "GMT+7", "GMT+8"],
     },
     {

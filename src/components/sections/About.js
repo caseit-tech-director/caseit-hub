@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import SectionMarker from "../navigation/SectionMarker";
-import "@styles/main.scss";
+import React, { Component } from "react"
+import SectionMarker from "../navigation/SectionMarker"
+import "@styles/main.scss"
 
 const about = () => {
   return (
@@ -23,10 +23,10 @@ const about = () => {
             connections. The competition provides a rigorous platform to test
             students’ critical business case analysis capabilities and empower
             students to present with confidence in front of esteemed industry
-            professionals on an international stage.
+            professionals on an international stage.{" "}
           </p>
           <p>
-            This year, CaseIT takes place virtually over the course of five days
+            This year, CaseIT takes place virtually over the course of six days
             in February. During this time, competitors engage in an intense week
             of competition that includes a preliminary round of two cases; a
             wildcard round; and a final presentation that showcases the top five
@@ -67,15 +67,19 @@ const about = () => {
           </p>
           <p>
             The Beedie School of Business operates across three campuses —
-            Vancouver, Burnaby, and Surrey — hosting over 3,500 undergraduate
-            BBA students, 800 graduate and MBA students, and a thriving Ph.D.
-            program. With 29,000 alumni in over 82 countries, the Beedie School
-            of Business offers lifelong engagement.
+            Vancouver, Burnaby, and Surrey — hosting over 3,800 undergraduate
+            BBA students, 700 graduate and MBA students, and a thriving Ph.D.
+            program.
           </p>
-          <p>For more information, please visit beedie.sfu.ca</p>
+          <p>
+            For more information, please visit{" "}
+            <a href="https://beedie.sfu.ca" target="_blank">
+              beedie.sfu.ca
+            </a>{" "}
+          </p>
         </article>
       </SectionMarker>
     </main>
-  );
-};
-export default about;
+  )
+}
+export default about

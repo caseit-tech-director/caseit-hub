@@ -1,27 +1,27 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import Chair from "../components/sections/Chair";
-import Navigation from "../components/navigation";
-import SectionMarker from "../components/navigation/SectionMarker";
-import Button from "../components/form/Button";
-import About from "../components/sections/About";
-import Overview from "../components/sections/Overview";
-import Structure from "../components/sections/Structure";
-import Tech from "../components/sections/Tech";
-import OC from "../components/sections/OC";
-import Sponsor from "../components/sections/Sponsor";
-import TopBar from "../components/topbar/topbar";
+import React from "react"
+import { Helmet } from "react-helmet"
+import Chair from "../components/sections/Chair"
+import Navigation from "../components/navigation"
+import SectionMarker from "../components/navigation/SectionMarker"
+import Button from "../components/form/Button"
+import About from "../components/sections/About"
+import Overview from "../components/sections/Overview"
+import Structure from "../components/sections/Structure"
+import Tech from "../components/sections/Tech"
+import OC from "../components/sections/OC"
+import Sponsor from "../components/sections/Sponsor"
+import TopBar from "../components/topbar/topbar"
 
-import "@styles/main.scss";
-import WelcomePopup from "@components/welcomePopup/";
-import { NavigationContextProvider } from "@components/navigation/NavigationContext";
-import Hero from "@components/hero/hero";
+import "@styles/main.scss"
+import WelcomePopup from "@components/welcomePopup/"
+import { NavigationContextProvider } from "@components/navigation/NavigationContext"
+import Hero from "@components/hero/hero"
 
 const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Welcome Package - CaseIT 2021</title>
+        <title>CaseIT 2022 Competitor Welcome Package & Guidebook</title>
         <meta charSet="utf-8" />
         {/* Fav icons */}
         <link
@@ -72,22 +72,13 @@ const Home = () => {
                 <div className="center-layout">
                   <h3> Letter from the Prime Minister </h3>
                   <div className="button-ctr">
-                    <Button
-                      href="https://drive.google.com/file/d/1I_j5-Bf5ED9XoJxkx_0orIlrlJixR7Ky/view?usp=sharing"
-                      target="_blank"
-                    >
-                      English
-                    </Button>
-                    <Button
-                      href="https://drive.google.com/file/d/1WIrgNL1lKDTh1wG7D8EiX0py_1I_9dQE/view?usp=sharing"
-                      target="_blank"
-                    >
-                      French
+                    <Button target="_blank" disabled>
+                      COMING SOON
                     </Button>
                   </div>
                 </div>
               </SectionMarker>
-              <SectionMarker
+              {/* <SectionMarker
                 label="Letter From the Premier"
                 hash="letter_premier"
                 group="Welcome"
@@ -103,14 +94,8 @@ const Home = () => {
                     </Button>
                   </div>
                 </div>
-              </SectionMarker>
-              <SectionMarker
-                label="Chair's Welcome"
-                hash="chair_welcome"
-                group="Welcome"
-              >
-                <Chair />
-              </SectionMarker>
+              </SectionMarker> */}
+
               <SectionMarker
                 label="Dean's Welcome"
                 hash="dean_welcome"
@@ -119,17 +104,24 @@ const Home = () => {
                 <h1> Dean's Welcome </h1>
                 <p>
                   <a
-                    href="https://sfubeedie.wistia.com/medias/sxj489b9sq?wvideo=sxj489b9sq"
+                    href="https://vimeo.com/676018885/5f3f57e0f9"
                     target="_blank"
                   >
                     <img
                       loading="lazy"
-                      src="https://embed-fastly.wistia.com/deliveries/33ab16655aff60160494a2d5c4306c55.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=cc0336e0"
+                      src="https://i.imgur.com/aBPZkzw.png"
                       width="640"
                       height="480"
                     ></img>
                   </a>
                 </p>
+              </SectionMarker>
+              <SectionMarker
+                label="Chair's Welcome"
+                hash="chair_welcome"
+                group="Welcome"
+              >
+                <Chair />
               </SectionMarker>
               <About />
               <Overview />
@@ -164,7 +156,7 @@ const Home = () => {
         </NavigationContextProvider>
       </WelcomePopup>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
