@@ -7,7 +7,6 @@
   grid-gap: 8px;
   grid-row-gap: 24px;
   max-width: 1200px;
-  //   width: 100%;
   margin: 0 auto;
 }
 
@@ -21,6 +20,8 @@
 }
 
 .card--info--wrapper {
+  opacity: .9;
+  margin-top: 6px;
   display: flex;
   width: 100%;
   div:last-child {
