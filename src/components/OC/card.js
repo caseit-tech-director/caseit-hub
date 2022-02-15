@@ -9,7 +9,7 @@ const card = () => {
       {Images.map((item, index) => {
         return (
           <div className="OC-profile" key={index}>
-            <img loading="lazy" src={item.src} className="OC-profile__image" />
+            <img alt={item.alt} loading="lazy" src={item.src} className="OC-profile__image" />
             <div className="card--info--wrapper">
               <div className="card--info--content card--info--name"> 
                 <caption>{item.name}</caption>
