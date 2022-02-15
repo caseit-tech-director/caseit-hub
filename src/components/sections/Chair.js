@@ -6,7 +6,7 @@ const Welcome = () => {
   return (
     <main>
       <h2>Chair's Welcome</h2>
-      <YoutubeVideo src="https://www.youtube.com/embed/V0aajXvxx64" />
+      <YoutubeVideo src="https://www.youtube.com/embed/u6UVX2XQizk" />
       <p>
       It is our pleasure to welcome you to CaseIT 2022. Hosted in collaboration with the Beedie School of Business at Simon Fraser University, CaseIT is the world’s premier International Undergraduate Management Information Systems Business Case Competition. CaseIT has welcomed 936 undergraduate competitors representing 49 universities from 19 different countries to compete in Vancouver since 2004.
       </p>

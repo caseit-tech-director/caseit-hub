@@ -19,7 +19,7 @@ const overview = () => {
           of you to experience what we have planned for CaseIT 2022. Keep
           reading to see what to expect!
         </p>
-        <YoutubeVideo src="https://www.youtube.com/embed/IKbDLNhWypE" />
+        <YoutubeVideo src="https://www.youtube.com/embed/EMaJdk_iEds" />
       </SectionMarker>
 
       <SectionMarker

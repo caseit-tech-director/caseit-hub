@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import Button from "../../components/form/Button";
+import React, { Component } from "react"
+import Button from "../../components/form/Button"
 
-import "@styles/main.scss";
+import "@styles/main.scss"
 
 const sponsor = () => {
   return (
@@ -14,177 +14,184 @@ const sponsor = () => {
       </div>
       <div className="ad-ctr">
         <h3> Beedie </h3>
-        <h5 className="sponsor-subheader">Diamond Sponsor</h5>
+        <h5 className="sponsor-subheader">Title Sponsor</h5>
         <p>
-          Established in 1954, Beedie has grown from humble B.C. roots to become
-          one of the largest industrial developers and property managers in
-          Canada with over 30 million square feet of industrial construction
-          across British Columbia, Alberta and Ontario. Building on our strong
-          legacy of extensive industrial developments, the company has
-          diversified to include mixed-use, retail and residential developments,
-          as well as capital investments. The wide range of Beedie’s first-class
-          offerings and commitment to building for good has established the
-          company as a market leader across the development community. With
-          offices in Burnaby, Vancouver, Calgary, and Toronto, Beedie continues
-          to expand into new markets across North America.
+          Since its inception, the Beedie School of Business at Simon Fraser
+          University has championed lifelong learning, innovation, and impactful
+          change as we continue to provide education and research to benefit
+          both our local and global communities. We have achieved considerable
+          success, as confirmed by our accreditation by the AACSB (Association
+          to Advance Collegiate Schools of Business) and our reception of the
+          EQUIS Quality Award from the EFMD (European Foundation for Management
+          Development). The Beedie School of Business is proudly included in the
+          less than 1% of business schools worldwide to have earned both of
+          these esteemed recognitions.
         </p>
         <p>
-          The firm’s success is not measured by the size and diversity of its
-          real estate portfolio, but by the longevity of the relationships we
-          have established with our clients, homeowners and employees – many
-          which span decades.
-        </p>
-        <p>
-          Since 1986, Beedie has played a major role in developing some of Metro
-          Vancouver’s most prominent business parks and award-winning
-          state-of-the-art warehouse facilities. As such, Beedie has become a
-          market leader in built-to-suit development and tilt-up construction.
-          The company offers a fully integrated approach, handling every step of
-          the development process in-house, from land development, design and
-          construction to financing, warranty and property management. This
-          unique approach allows us to meet our clients’ current and future
-          building requirements while our experienced development and
-          construction teams provide clients with unparalleled insight and
-          advice, repeatedly leading to operational efficiencies and overall
-          cost savings. A commitment to delivering value and quality, coupled
-          with integrity, innovation and vision has defined the Beedie name
-          since its’ inception.
-        </p>
-        <p>
-          As the largest commercial property manager in British Columbia, Beedie
-          prides itself on providing in-house property management services to
-          more than 450 clients leasing more than 189 properties. With an
-          ever-expanding industrial portfolio of almost 13 million square feet,
-          our philosophy of providing proactive asset management is based on
-          providing each of our valued clients with optimal service and support.
-        </p>
-        <p>
-          Beedie Living, the residential division of Beedie, has expanded the
-          company’s residential portfolio to become one of British Columbia’s
-          fastest growing residential developers. Having brought over 2,400
-          homes to the market since 2011, and over 7,000 homes currently in
-          planning and development, Beedie Living continues to create accessible
-          and vibrant communities across Metro Vancouver.
-        </p>
-        <p>
-          Created in 2010, Beedie Capital supports high growth businesses by
-          providing creative, responsive and flexible financing. We partner with
-          leading companies and management teams in a variety of industry
-          sectors across North America that share our core values. We pay our
-          success forward by creating financial opportunities for like-minded
-          companies to thrive.
-        </p>
-        <p>
-          At Beedie, we foster talent, encourage innovation, and reward success.
-          Since 2016, we’ve been recognized as a top employer both provincially
-          and nationally. Businesses which create and maintain jobs are a
-          tremendous community asset. In 2019 and 2020, Beedie has hired 58
-          permanent salaried employees and 35 site employees bringing its total
-          employee count to 302 permanent full and part-time employees. Beedie
-          is a valued member of the Burnaby community as it continues to provide
-          employment opportunities for Burnaby residents and its surrounding
+          The Beedie School of Business is currently within the top 100
+          universities in business research output worldwide. Furthermore, our
+          undergraduate, graduate, and Ph.D. programs demonstrate a unique
+          innovative spirit to facilitate dynamism and sustain relevance.
+          Supported by extensive sponsorships with public, private, and
+          nonprofit organizations, our objective is to produce broadly and
+          deeply educated, enterprising, and socially conscious individuals,
+          eager and able to make meaningful and enduring contributions to their
           communities.
         </p>
         <p>
-          At Beedie, we believe in the power of our communities and the
-          individuals who live in them. Our founder, Keith Beedie, instilled his
-          unwavering commitment to giving back in the company that bears his
-          name. Keith would say being involved in the communities where we live
-          and work is not only good for business, it’s the right thing to do.
-          His son and Beedie President, Ryan Beedie, echoes and strongly
-          supports this same belief. Through our Built for Good social
-          responsibility promise, that legacy is still our driving force today
-          and can be seen through a variety of ongoing philanthropic endeavors
-          that supports the people in our communities who need it most.
+          The Beedie School of Business operates across three campuses —
+          Vancouver, Burnaby, and Surrey — hosting over 3,800 undergraduate BBA
+          students, 700 graduate and MBA students, and a thriving Ph.D. program.
         </p>
-        <img
+        <p>
+          For more information, please visit{" "}
+          <a href="https://beedie.sfu.ca" target="_blank">
+            beedie.sfu.ca
+          </a>
+        </p>
+        {/* <img
           src="sponsors/beedie/Beedie_Ad.jpg"
           alt="Beedie Ad"
           loading="lazy"
-        ></img>
+        ></img> */}
       </div>
       <div className="ad-ctr">
-        <h3> Baker Tilly WM LLP </h3>
-        <h5 className="sponsor-subheader">Gold Sponsor</h5>
+        <h3> CIO Association of Canada - Vancouver Chapter</h3>
+        <h5 className="sponsor-subheader">Title Sponsor</h5>
         <p>
-          {" "}
-          Baker Tilly WM LLP is a leading audit, tax, and advisory firm, based
-          in Vancouver and Toronto. For nearly 60 years, our firm has been
-          providing a full spectrum of business services including audit and
-          accounting, tax, business valuations, litigation support, corporate
-          finance, transfer pricing, technology, insolvency and restructuring.
-          We serve domestic and foreign corporate groups, professionals, and
-          not-for-profit organizations across a wide range of industries.{" "}
+          CIOCAN is a not-for-profit community of CIOs and IT leaders whose
+          mission is to facilitate networking, sharing of best practices and
+          executive development, and to collaborate on issues facing CIOs/IT
+          Executives.
         </p>
         <p>
-          {" "}
-          Baker Tilly WM LLP is an independent member of Baker Tilly Canada
-          Cooperative, a network comprised of 23 member firms across Canada.{" "}
+          For more information, please visit{" "}
+          <a href="https://www.ciocan.ca/" target="_blank">
+            www.ciocan.ca
+          </a>
         </p>
       </div>
       <div className="sponsor-ctr">
         <div className="ad-ctr">
-          <h3> Pearson Canada </h3>
+          <h3> Beedie </h3>
+          <h5 className="sponsor-subheader"> Diamond Sponsor </h5>
+          <p>
+            Founded in 1954, Beedie is Western Canada’s largest private
+            industrial developer and property manager, having completed more
+            than 35 million square feet of new development, with an
+            ever-expanding portfolio of over 11 million square feet. With over
+            six decades of building for good, Beedie is also one of the Lower
+            Mainland’s most reputable residential developers having completed
+            several significant, large-scale master-planned communities and
+            mixed-use projects.
+          </p>
+          <p>
+            For more information, please visit{" "}
+            <a href="https://www.beedie.ca/" target="_blank">
+              www.beedie.ca
+            </a>
+          </p>
+          {/* <img
+            src="sponsors/"
+            alt=""
+            loading="lazy"
+          ></img> */}
+        </div>
+        <div className="ad-ctr">
+          <h3> CGI </h3>
+          <h5 className="sponsor-subheader"> Gold Sponsor </h5>
+          <p>
+            Founded in 1976, CGI is among the largest IT and business consulting
+            services firms in the world. We are insights-driven and
+            outcome-based to help accelerate returns on your IT and business
+            investments.
+          </p>
+          <p>
+            In all we do, our goal is to build trusted relationships through
+            client proximity, providing industry and technology expertise to
+            help our clients meet the needs of their customers and citizens.
+          </p>
+          <p>
+            For more information, please visit{" "}
+            <a href="https://www.cgi.com/en" target="_blank">
+              www.cgi.com
+            </a>
+          </p>
+        </div>
+
+        <div className="ad-ctr">
+          <h3> East West Market</h3>
           <h5 className="sponsor-subheader"> Silver Sponsor </h5>
           <p>
-            At Pearson, we’re committed to a world that’s always learning and to
-            our talented team who makes it all possible. In a fast-paced world,
-            education is the key to success and we are always re-examining the
-            way people learn best, whether it’s one child in our own backyard or
-            an education community across the globe. We are bold thinkers and
-            standout innovators who motivate each other to explore new frontiers
-            in an environment that supports and inspires us to always be better.
-            By pushing the boundaries of technology — and each other to surpass
-            these boundaries — we create seeds of learning that become the
-            catalyst for the world’s innovations, personal and global, large and
-            small.
+            The original East West Market has been serving the Vancouver
+            community since 1996, until the original owner retired and David Lee
+            Kwen purchased the store, making it what it is today. David was
+            raised in Trinidad and Tobago along with eight siblings, and he
+            helped his family run a local grocery store throughout his
+            childhood. His family moved to Canada when he was 14, and he
+            continued to hone his customer service skills in the subsequent
+            years. This upbringing has given David a deep understanding of how
+            to make every customer feel like family. He understands that a local
+            grocer can truly be a cornerstone of a community because food and
+            grocery shopping brings people from all walks of life together.
           </p>
-          <img
-            src="sponsors/pearson/Pearson_Ad.jpg"
-            alt="Pearson Ad"
-            loading="lazy"
-          ></img>
+          <p>
+            When David purchased East West Market, his goal was to enrich the
+            community. He is passionate about giving back and he focuses heavily
+            on charitable giving, environmental awareness, sustainability, and
+            cultivating a feeling of connectedness and unity. The success and
+            popularity of this location has encouraged David to expand East West
+            Markets reach with additional locations. Adding more locations
+            allows us to take our message to more communities, and helps us
+            further our mission of promoting sustainability and local economy
+            support. Our first new location is in Kerrisdale and offers
+            customers the same level of friendly, personalized service that they
+            have come to expect from the original store.
+          </p>
+          <p>
+            For more information, please visit{" "}
+            <a href="https://eastwestmarkets.ca/" target="_blank">
+              eastwestmarkets.ca/
+            </a>
+          </p>
         </div>
+
+        <div className="ad-ctr">
+          <h3> SFSS </h3>
+          <h5 className="sponsor-subheader"> Silver Sponsor </h5>
+          <p>
+            The Simon Fraser Student Society is a student-led organization that
+            represents and advocates for the interests of the 25,000+
+            undergraduate students at SFU. We are your not-for-profit support
+            network and voice at SFU and provide services and support to make
+            your student life better.
+          </p>
+          <p>
+            For more information, please visit{" "}
+            <a href="https://sfss.ca/" target="_blank">
+              sfss.ca/
+            </a>
+          </p>
+        </div>
+
         <div className="ad-ctr">
           <h3> Microsoft </h3>
           <h5 className="sponsor-subheader"> Networking Sponsor </h5>
           <p>
-            {" "}
             Established in 1985, Microsoft Canada Inc. is the Canadian
-            subsidiary of Microsoft Corp. (Nasdaq "MSFT"), the worldwide leader
-            in software, services and solutions that help people and businesses
-            realize their full potential{" "}
+            subsidiary of Microsoft Corp., the worldwide leader in software,
+            services and solutions that help people and businesses realize their
+            full potential.
           </p>
           <p>
-            {" "}
-            Recognized as one of Canada's Great Places to Work, Microsoft Canada
-            Inc. provides nationwide sales, marketing, consulting and local
-            support services. Headquartered in Mississauga, Microsoft Canada has
-            nine regional offices across the country dedicated to empowering
-            people through great software. Microsoft Canada is a creative
-            workplace which attracts the best and brightest talent in the IT
-            industry who bring an ever evolving vision of the future to reality.
-          </p>
-          <p>
-            Microsoft software helps businesses and consumers to reach their
-            full potential, however they define it. Woven throughout daily life,
-            whether it be work or play, Microsoft technologies flourish when
-            they get into the hands of millions of Canadian partners and
-            customers enabling innovation often in new ways.
-          </p>
-          <p>
-            {" "}
-            Microsoft Canada is equally passionate about committing to Canadian
-            communities. Since its inception, Microsoft Canada has had a
-            corporate giving philosophy that goes beyond financial donations to
-            champion inventive forms of philanthropy. For more information on
-            how Microsoft Canada has joined forces with organizations across
-            Canada to make a difference and invest in local communities, visit
-            Microsoft Philanthropies.
+            For more information, please visit{" "}
+            <a href="https://www.microsoft.com/en-ca/" target="_blank">
+              www.microsoft.com/en-ca/
+            </a>
           </p>
         </div>
       </div>
     </main>
-  );
-};
-export default sponsor;
+  )
+}
+export default sponsor
