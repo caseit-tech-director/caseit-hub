@@ -9,7 +9,10 @@ const EventOverviewTemplate = ({
   eventName,
   dressCode,
   attendance,
+  group,
   children,
+  infoLabel1,
+  infoLabel2,
   hashName, // the content
 }) => {
   const eventSessions = EventTimes[eventName];
@@ -21,7 +24,7 @@ const EventOverviewTemplate = ({
   
 
   return (
-    <SectionMarker group="Week Overview" label={eventName} hash={hashName}>
+    <SectionMarker group={group} label={eventName} hash={hashName}>
       <div className="event-overview">
         <h2>{eventName}</h2>
         {typeof eventSessions !== "undefined" && (
@@ -29,11 +32,11 @@ const EventOverviewTemplate = ({
         )}
         <div className="event-info-container">
           <div className="event-info">
-            <div className="event-info__label">Dress Code</div>
+            <div className="event-info__label">{infoLabel1}</div>
             <div className="event-info__content">{dressCode}</div>
           </div>
           <div className="event-info">
-            <div className="event-info__label">Attendance</div>
+            <div className="event-info__label">{infoLabel2}</div>
             <div className="event-info__content">{attendance}</div>
           </div>
         </div>

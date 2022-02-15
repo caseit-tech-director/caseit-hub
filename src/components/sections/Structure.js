@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Button from "../form/Button"
 import SectionMarker from "../navigation/SectionMarker"
 import YoutubeVideo from "../youtubeVideo/YoutubeVideo"
+import EventOverviewTemplate from "@components/weekOverview/EventOverviewTemplate"
 
 import "@styles/main.scss"
 
@@ -44,41 +45,79 @@ const structure = () => {
           ></img>
         </section>
       </SectionMarker>
-      <SectionMarker
-        group="Competition Structure"
-        hash="rules"
-        label="CaseIT 2022 Official Rules Package"
-      >
+      <SectionMarker group="Competition Structure" hash="rules" label="Rules">
         <section>
-          <h2> CaseIT 2022 Official Rules Package </h2>
-          <ul>
-            <li>Date: Sunday, February 20</li>
-            <li>Time: 08:00 - 09:00 AM PST</li>
-          </ul>
-          <div className="button-ctr">
-            <Button
-              href="https://www.google.com/url?q=https://drive.google.com/file/d/1yEATQYg6BQMF-v7f1viMRqN-oMLkcYKq/view?usp%3Ddrivesdk&sa=D&source=docs&ust=1644759995237881&usg=AOvVaw2nb5PZCeVs8KYzv893W3Wu"
-              target="_blank"
-            >
-              {" "}
-              RULES{" "}
-            </Button>
-          </div>
+          <h2> Rules </h2>
+          <p>
+            The official competition rules for CaseIT 2022 is linked below and
+            will also be provided in each team’s assigned Google Drive folders,
+            which will be made accessible during deliberation periods.{" "}
+          </p>
+          <p>
+            Please review this document prior to competition week and be advised
+            that there will be an opportunity for teams and coaches to ask
+            questions at our synchronous Rules Office Hours. The Zoom link to
+            join for this event can be found in both competitor and coach’s
+            Google Calendars.
+          </p>
         </section>
       </SectionMarker>
+
+      <EventOverviewTemplate
+        group="Competition Structure"
+        eventName="CaseIT 2022 Official Rules Package"
+        hashName="competition_structure"
+      >
+        <div className="button-ctr">
+          <Button
+            href="https://drive.google.com/file/d/1yEATQYg6BQMF-v7f1viMRqN-oMLkcYKq/view?usp=drivesdk"
+            target="_blank"
+          >
+            RULES
+          </Button>
+        </div>
+      </EventOverviewTemplate>
       <SectionMarker
         group="Competition Structure"
         hash="spirit"
         label="Spirit Awards"
       >
         <h2> Spirit Award </h2>
-        <YoutubeVideo src="https://www.youtube.com/embed/2hEJygi2Pf8" />
+        <YoutubeVideo src="https://www.youtube.com/embed/3IG80NauwRg" />
         <p>
           The team that best represents the values and spirit of camaraderie,
           enthusiasm, and dedication will be awarded the Team Spirit Award. This
           award will be presented to the competing team with the highest
           cumulative spirit score, based on attendance, performance, and
-          engagement throughout the competition week.
+          engagement throughout the competition week. This includes, but is not
+          limited to:
+        </p>
+        <ul>
+          <li>
+            Engaging in pre-competition week opportunities including the
+            University Introduction Contest and Team Host connections
+          </li>
+          <li>
+            Participating in non-case related activities throughout the week
+            including MixIT, PlayIT and Discover Vancouver{" "}
+          </li>
+          <li>
+            Posting on social media throughout the competition week, using event
+            hashtags and tagging @caseitsfu, and participating in social media
+            engagement challenges{" "}
+          </li>
+          <li>
+            Engaging in positive interactions with CaseIT 2022 stakeholders and
+            encouragement toward other competing teams{" "}
+          </li>
+        </ul>
+        <p>#ShareIT Weeklong Bingo Challenge</p>
+        <p>
+          To obtain your full points for the #ShareIT Bingo Challenge, submit
+          your photos/screenshots/proof of completion with the title of the
+          challenge (only 1 photo needed per bingo square) in a Google Folder to
+          caseit@sfu.ca. Additional rules and the bingo template can be found on
+          @caseitsfu Instagram highlights.
         </p>
         <div className="button-ctr">
           <Button

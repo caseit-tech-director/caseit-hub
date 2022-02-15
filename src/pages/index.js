@@ -16,6 +16,9 @@ import "@styles/main.scss"
 import WelcomePopup from "@components/welcomePopup/"
 import { NavigationContextProvider } from "@components/navigation/NavigationContext"
 import Hero from "@components/hero/hero"
+import '../components/team/team.scss';
+
+import TeamItems from "../components/team/TeamItems"
 
 const Home = () => {
   return (
@@ -136,6 +139,26 @@ const Home = () => {
               >
                 <h1 className="display"> Meet the Teams </h1>
                 <img src="images/Map.png"></img>
+                {TeamItems.map((item, index) => {
+                  return (
+                    <div key={index}>
+                      <h5>{item.school}</h5>
+                      <ul>
+                        <li>{item.student1}</li>
+                        <li>{item.student2}</li>
+                        <li>{item.student3}</li>
+                        <li>{item.student4}</li>
+                      </ul>
+                      <div className="coach--info--wrapper">
+                        <p>Coach:</p>
+                        <ul>
+                          <li>{item.coach1}</li>
+                          <li>{item.coach2}</li>
+                        </ul>
+                      </div>
+                    </div>
+                  )
+                })}
               </SectionMarker>
               <SectionMarker
                 label="Organizing Committee"

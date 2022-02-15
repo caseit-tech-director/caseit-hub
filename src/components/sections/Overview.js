@@ -19,7 +19,7 @@ const overview = () => {
           of you to experience what we have planned for CaseIT 2022. Keep
           reading to see what to expect!
         </p>
-        <YoutubeVideo src="https://www.youtube.com/embed/EMaJdk_iEds" />
+        <YoutubeVideo src="https://www.youtube.com/embed/-SAmfXEbLx4" />
       </SectionMarker>
 
       <SectionMarker
@@ -41,6 +41,9 @@ const overview = () => {
       </SectionMarker>
 
       <EventOverviewTemplate
+        group="Week Overview"
+        infoLabel1="Dress Code"
+        infoLabel2="Attendance"
         eventName="ReadyForIT"
         dressCode="Smart Casual"
         attendance="Mandatory"
@@ -65,20 +68,14 @@ const overview = () => {
       </EventOverviewTemplate>
 
       <EventOverviewTemplate
+        group="Week Overview"
+        infoLabel1="Dress Code"
+        infoLabel2="Attendance"
         eventName="PlayIT"
         dressCode="Casual"
         attendance="Highly Recommended"
         hashName="play_it"
       >
-        <h5>Date and Times</h5>
-        <p>
-          <ul>
-            <li>Sunday, February 20, 2022 at 12:00PM PST</li>
-            <li>Monday, February 21, 2022 at 2:00PM PST</li>
-            <li>Wednesday, February 23, 2022 at 9:00AM PST</li>
-            <li>Friday, February 25, 2022 at 8:00PM PST</li>
-          </ul>
-        </p>
         <h5>Description</h5>
         <p>
           PlayIT is a casual, social event intended for case competitors to get
@@ -122,6 +119,9 @@ const overview = () => {
         </p>
       </EventOverviewTemplate>
       <EventOverviewTemplate
+        group="Week Overview"
+        infoLabel1="Dress Code"
+        infoLabel2="Attendance"
         eventName="Discover Vancouver: A Virtual Scavenger Hunt"
         dressCode="Casual"
         attendance="Highly Recommended"
@@ -152,17 +152,14 @@ const overview = () => {
         </p>
       </EventOverviewTemplate>
       <EventOverviewTemplate
+        group="Week Overview"
+        infoLabel1="Dress Code"
+        infoLabel2="Attendance"
         eventName="MixIT - Mocktail Night"
         dressCode="Casual"
         attendance="Highly Recommended"
         hashName="mix_it"
       >
-        <h5>Date and Times</h5>
-        <p>
-          <ul>
-            <li>Monday, February 21, 2022 at 12:00PM PST</li>
-          </ul>
-        </p>
         <h5>Description</h5>
         <p>
           Before the two cases, take a moment to unwind and connect with fellow
@@ -199,10 +196,13 @@ const overview = () => {
         </ul>
       </EventOverviewTemplate>
       <EventOverviewTemplate
+        group="Week Overview"
+        infoLabel1="Dress Code"
+        infoLabel2="Attendance"
         eventName="Sponsor Networking"
         dressCode="Business Casual"
         attendance="Highly Recommended"
-        hashName="awards_ceremony"
+        hashName="sponsor_networking"
       >
         <h5>Description</h5>
         <p>
@@ -241,17 +241,14 @@ const overview = () => {
         </ul>
       </EventOverviewTemplate>
       <EventOverviewTemplate
+        group="Week Overview"
+        infoLabel1="Dress Code"
+        infoLabel2="Attendance"
         eventName="Coaches Event"
         dressCode="Smart Casual"
         attendance="Highly Recommended"
-        hashName="awards_ceremony"
+        hashName="coaches_event"
       >
-        <h5>Date and Times</h5>
-        <p>
-          <ul>
-            <li>Thursday, February 24 at 10:00 AM PST</li>
-          </ul>
-        </p>
         <h5>Description</h5>
         <p>
           This event is to provide coaches with the opportunity to form and
@@ -262,17 +259,14 @@ const overview = () => {
         </p>
       </EventOverviewTemplate>
       <EventOverviewTemplate
+        group="Week Overview"
+        infoLabel1="Dress Code"
+        infoLabel2="Attendance"
         eventName="Awards Banquet"
         dressCode="Semi-Formal or Gala Attire"
         attendance="Mandatory"
         hashName="awards_ceremony"
       >
-        <h5>Date and Times</h5>
-        <p>
-          <ul>
-            <li>Friday, February 25, 2022 at 7:00PM PST</li>
-          </ul>
-        </p>
         <h5>Description</h5>
         <p>
           The Awards Ceremony concludes the CaseIT 2022 competition week, and is

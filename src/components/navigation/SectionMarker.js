@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import { useNavMenu } from "./NavigationContext";
 
+
 const SECTION_VERTICAL_OFFSET = 200; // vertical offset to compensate the anchor difference
 const SectionMarker = ({ group, label, hash, children }) => {
   const measureRef = useRef();
