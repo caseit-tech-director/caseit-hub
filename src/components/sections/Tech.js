@@ -79,16 +79,10 @@ const tech = () => {
         </ul>
         <p>
           All competitors and coaches can access the platform through the link:
-          <a
-            href="https://events.hubilo.com/caseit-2022---the-worlds-premier-mis-case-competition"
-            target="blank"
-          >
-            https://events.hubilo.com/caseit-2022---the-worlds-premier-mis-case-competition
-          </a>
         </p>
         <div className="button-ctr">
           <Button
-            href="https://caseit2021.hubilo.com/community/"
+            href="https://events.hubilo.com/caseit-2022---the-worlds-premier-mis-case-competition"
             target="_blank"
           >
             {" "}
