@@ -3,8 +3,9 @@
 
 .OC-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
+  grid-row-gap: 24px;
   max-width: 1200px;
   //   width: 100%;
   margin: 0 auto;
@@ -17,4 +18,25 @@
 
   margin-top: $spacing-s;
   margin-bottom: $spacing-m;
+}
+
+.card--info--wrapper {
+  display: flex;
+  width: 100%;
+  div:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+    caption {
+      text-align: right;
+    }
+  }
+  .card--info--content {
+    width: 50%;
+  }
+  caption {
+    display: inline;
+  }
+  .card--info--role{
+    width: 80% !important;
+  }
 }
