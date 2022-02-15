@@ -54,7 +54,7 @@ const images = [
     team: "",
   },
   {
-    src: "images/2022/organizers/CaseIT-OC-michelle.jpg",
+    src: "images/2022/organizers/CaseIT-OC-ali.jpg",
     name: "Ali Leung",
     position: "Director of University Relations",
     team: "",
