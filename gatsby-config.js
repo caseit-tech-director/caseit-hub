@@ -3,8 +3,8 @@ const path = require("path");
 module.exports = {
   siteMetadata: {
     title: `CaseIT Hub`,
-    description: `Information center for CaseIT 2021 competition week.`,
-    author: `CaseIT 2021`,
+    description: `Information center for CaseIT 2022 competition week.`,
+    author: `CaseIT 2022`,
   },
   plugins: [
     `gatsby-plugin-sass`,

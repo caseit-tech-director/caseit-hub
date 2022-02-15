@@ -41,11 +41,11 @@ const Home = () => {
           href="/images/favicon-16x16.png"
           sizes="16x16"
         />
-        <link
+        {/* <link
           rel="mask-icon"
           href="/images/safari-pinned-tab.svg"
           color="#ff4400"
-        />
+        /> */}
         <meta name="theme-color" content="#fff" />
         {/* open graph icons */}
         <meta property="og:image" content="/images/favicon-32x32.png"></meta>

@@ -97,7 +97,7 @@ const WelcomePopup = ({ children }) => {
                     </motion.p>
                     <motion.p className="small" variants={item}>
                       We have prepared a comprehensive guide for you to navigate
-                      CaseIT 2021.
+                      CaseIT 2022.
                     </motion.p>
                   </>
                 )}

@@ -12,12 +12,12 @@ const Home = () => {
         eventSessions={[
           {
             name: "session 1",
-            vancouverTime: "2021-2-14 6:00",
+            vancouverTime: "2022-2-14 6:00",
             timezones: ["GMT-8", "GMT+1", "GMT+7", "GMT+8"],
           },
           {
             name: "session 2",
-            vancouverTime: "2021-2-14 6:00",
+            vancouverTime: "2022-2-14 6:00",
             timezones: ["GMT-8", "GMT-7", "GMT-6", "GMT-5"],
           },
         ]}
@@ -26,12 +26,12 @@ const Home = () => {
         eventSessions={[
           {
             name: "session 1",
-            vancouverTime: "2021-2-14 6:00",
+            vancouverTime: "2022-2-14 6:00",
             timezones: ["GMT-8", "GMT+1", "GMT+7", "GMT+8"],
           },
           {
             name: "session 2",
-            vancouverTime: "2021-2-14 6:00",
+            vancouverTime: "2022-2-14 6:00",
             timezones: ["GMT-8", "GMT-7", "GMT-6", "GMT-5"],
           },
         ]}

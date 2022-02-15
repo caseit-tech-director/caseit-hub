@@ -82,16 +82,10 @@ const structure = () => {
         </p>
         <div className="button-ctr">
           <Button
-            href="https://drive.google.com/file/d/1LXfQ-zyq68RLcycQ2UUP-GSNa0f9EH7W/view?usp=sharing"
+            href="https://drive.google.com/file/d/1tnrAasd6KHMvYYoXsh3v8ElHl0u4zpOE/view?usp=sharing"
             target="_blank"
           >
             POINTS
-          </Button>
-          <Button
-            href="https://drive.google.com/file/d/1Uirqqp4lHt9V3bXfzfsk1UESiGg3HISv/view?usp=sharing"
-            target="_blank"
-          >
-            CHALLENGES
           </Button>
         </div>
       </SectionMarker>
