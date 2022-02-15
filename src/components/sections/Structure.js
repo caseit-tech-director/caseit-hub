@@ -39,7 +39,7 @@ const structure = () => {
           </p>
           <img
             className="image"
-            src="images/comp_advancement.png"
+            src="images/2022/2022comp_advancement.png"
             alt="Competition Advancement"
             loading="lazy"
           ></img>

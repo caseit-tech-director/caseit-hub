@@ -29,13 +29,8 @@ const overview = () => {
       >
         <h2> Competition Schedule </h2>
         <img
-          src="images/schedule_NA.png"
+          src="images/2022/comp_schedule2022.png"
           alt="North America Schedule"
-          loading="lazy"
-        ></img>
-        <img
-          src="images/schedule_EU-or-ASIA.png"
-          alt="EU or Asia Schedule"
           loading="lazy"
         ></img>
       </SectionMarker>

@@ -138,7 +138,7 @@ const Home = () => {
                 group="Stakeholders"
               >
                 <h1 className="display"> Meet the Teams </h1>
-                <img src="images/Map.png"></img>
+                <img src="images/2022/team_map2022.png"></img>
                 {TeamItems.map((item, index) => {
                   return (
                     <div key={index}>

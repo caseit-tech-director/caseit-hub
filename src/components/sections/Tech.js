@@ -30,6 +30,13 @@ const tech = () => {
           organization and engagement.
         </p>
       </section>
+
+      <img
+        className="image"
+        src="images/2022/hubilo-agenda.png"
+        alt="Hubilo Agenda"
+        loading="lazy"
+      ></img>
       <section>
         <h5> Main Features of Hubilo</h5>
         <ul>
