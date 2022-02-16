@@ -174,13 +174,13 @@ const images = [
     team: "",
     alt: "Organizing Committee Image"
   },
-  // {
-  //   src: "images/2022/organizers-webp/CaseIT-OC-brandon.webp",
-  //   name: "Test",
-  //   position: "position",
-  //   team: "",
-  // alt: "Organizing Committee Image"
-  // },
+  {
+    src: "images/2022/organizers-webp/CaseIT-OC-brandonlau.webp",
+    name: "Brandon Lau",
+    position: "Team Host",
+    team: "",
+  alt: "Organizing Committee Image"
+  },
   {
     src: "images/2022/organizers-webp/CaseIT-OC-kristy.webp",
     name: "Kristy Hong",
@@ -294,7 +294,7 @@ const images = [
     alt: "Organizing Committee Image"
   },
   {
-    src: "images/2022/organizers-webp/CaseIT-OC-justin(1).webp",
+    src: "images/2022/organizers-webp/CaseIT-OC-justin.webp",
     name: "Justin Jung",
     position: "PIVOT Coordinator",
     team: "",

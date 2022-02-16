@@ -71,6 +71,13 @@ const overview = () => {
         attendance="Highly Recommended"
         hashName="play_it"
       >
+        <h5>Date and Times</h5>
+        <ul>
+          <li>Sunday, February 20, 2022 at 12:00PM PST</li>
+          <li>Monday, February 21, 2022 at 2:00PM PST</li>
+          <li>Wednesday, February 23, 2022 at 9:00AM PST</li>
+        </ul>
+        <p>"Please note there are 3 sessions for #PlayIT</p>
         <h5>Description</h5>
         <p>
           PlayIT is a casual, social event intended for case competitors to get

@@ -17,7 +17,7 @@ const tech = () => {
             href="https://events.hubilo.com/caseit-2022---the-worlds-premier-mis-case-competition"
             target="blank"
           >
-            https://events.hubilo.com/caseit-2022---the-worlds-premier-mis-case-competition
+            Hubilo Link
           </a>
           Hubilo is an event management platform that is integrated with Zoom.
           Competitors will be either redirected to a Zoom room to join their
