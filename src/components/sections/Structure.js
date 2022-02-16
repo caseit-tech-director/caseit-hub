@@ -68,6 +68,7 @@ const structure = () => {
         eventName="CaseIT 2022 Official Rules Package"
         hashName="competition_structure"
       >
+        <p>If you have any questions regarding the competition, please feel free to drop by our optional Rules Office Hours</p>
         <div className="button-ctr">
           <Button
             href="https://drive.google.com/file/d/1yEATQYg6BQMF-v7f1viMRqN-oMLkcYKq/view?usp=drivesdk"
@@ -111,7 +112,7 @@ const structure = () => {
             encouragement toward other competing teams{" "}
           </li>
         </ul>
-        <p>#ShareIT Weeklong Bingo Challenge</p>
+        <p>#ShareIT Week-long Bingo Challenge</p>
         <p>
           To obtain your full points for the #ShareIT Bingo Challenge, submit
           your photos/screenshots/proof of completion with the title of the
