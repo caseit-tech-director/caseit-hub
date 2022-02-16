@@ -59,7 +59,7 @@ const EventTimes = {
       timezones: ["GMT-8", "GMT+1", "GMT-5", "GMT-6", "GMT+8"],
     },
   ],
-  "Awards Banquet": [
+  "Awards Ceremony": [
     {
       vancouverTime: "2022-2-25 19:00",
       timezones: ["GMT-8", "GMT+1", "GMT-5", "GMT-6", "GMT+8"],

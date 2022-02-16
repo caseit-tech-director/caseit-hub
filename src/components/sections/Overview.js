@@ -257,7 +257,7 @@ const overview = () => {
         group="Week Overview"
         infoLabel1="Dress Code"
         infoLabel2="Attendance"
-        eventName="Awards Banquet"
+        eventName="Awards Ceremony"
         dressCode="Semi-Formal or Gala Attire"
         attendance="Mandatory"
         hashName="awards_ceremony"
@@ -271,7 +271,7 @@ const overview = () => {
         </p>
         <h5>What to Expect</h5>
         <p>
-          The Awards Banquet will feature various speeches from CaseIT 2022
+          The Awards Ceremony will feature various speeches from CaseIT 2022
           sponsors, SFU Beedie faculty members, and CaseIT organizing committee
           members. This event will recognize the achievements of the CaseIT 2022
           competing teams and ultimately announce the winning teams of CaseIT

@@ -98,7 +98,7 @@ const tech = () => {
         </div>
         <div className="button-ctr">
           <Button
-            href="https://drive.google.com/file/d/19vgAlrJp1adcDqn8AwOoEUzE4NWz3UL3/view?usp=sharing"
+            href="https://drive.google.com/file/d/1KHMn4GUyM9C1ocEFjP97EHB03I6UDvJJ/view"
             target="_blank"
           >
             TECHNOLOGY REQUIREMENTS GUIDE
