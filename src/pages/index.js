@@ -11,6 +11,8 @@ import Tech from "../components/sections/Tech"
 import OC from "../components/sections/OC"
 import Sponsor from "../components/sections/Sponsor"
 import TopBar from "../components/topbar/topbar"
+import PMLetterEnglish from "../../public/images/2022/SM_CaseIT-2022_ENG.pdf"
+import PMLetterFrench from "../../public/images/2022/SM_CaseIT-2022_FR.pdf"
 
 import "@styles/main.scss"
 import WelcomePopup from "@components/welcomePopup/"
@@ -75,9 +77,8 @@ const Home = () => {
                 <div className="center-layout">
                   <h3> Letter from the Prime Minister </h3>
                   <div className="button-ctr">
-                    <Button target="_blank" disabled>
-                      COMING SOON
-                    </Button>
+                    <Button href={PMLetterEnglish} target="_blank">ENGLISH</Button>
+                    <Button href={PMLetterFrench} target="_blank">FRENCH</Button>
                   </div>
                 </div>
               </SectionMarker>
