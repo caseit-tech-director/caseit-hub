@@ -33,6 +33,13 @@ const overview = () => {
           alt="North America Schedule"
           loading="lazy"
         ></img>
+        <h5>Note</h5>
+        <p>
+          Please note that the event blocks in this image are estimated
+          according to the hour, and do not accurately reflect start and end
+          times. For more specific timing logistics of each event, we recommend
+          that you refer to the Google Calendars that have shared with you.
+        </p>
       </SectionMarker>
 
       <EventOverviewTemplate
