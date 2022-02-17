@@ -1,13 +1,13 @@
 const images = [
   {
-    src: "images/2022/organizers-webp/CaseIT-OC-hansel.webp",
+    src: "images/2022/organizers-webp/CaseIT-OC-simon-flip.webp",
     name: "Simon Ford",
     position: "Academic Director",
     team: "",
     alt: "Organizing Committee Image",
   },
   {
-    src: "images/2022/organizers-webp/CaseIT-OC-simon-flip.webp",
+    src: "images/2022/organizers-webp/CaseIT-OC-hansel.webp",
     name: "Hansel Wu",
     position: "Student Engagement and Development Office (SEDO) Coordinator",
     team: "",
