@@ -8,7 +8,7 @@ export default {
   isu: "Iowa State University",
   ivey: "Ivey Business School ",
   mu: "Maastricht University ",
-  tum: "Technical University Munich",
+  // tum: "Technical University Munich",
   up: "Universidad Panamericana",
   uofh: "University of Houston",
   uofm: "University of Minnesota",

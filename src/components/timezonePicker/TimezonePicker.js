@@ -15,7 +15,7 @@ const UNIVERSITY_TIMEZONES = {
   isu: "Etc/GMT-6", //Iowa State University
   ivey: "Etc/GMT-5", //Ivey Business School
   mu: "Etc/GMT+1", //Maastricht University
-  tum: "Etc/GMT+1", //Technical University Munich
+  // tum: "Etc/GMT+1", //Technical University Munich
   up: "Etc/GMT-6", //Universidad Panamericana
   uofh: "Etc/GMT-6", //University of Houston
   uofm: "Etc/GMT-6", //University of Minnesota
