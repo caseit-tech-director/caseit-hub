@@ -27,7 +27,7 @@ const overview = () => {
         hash="schedule"
         group="Week Overview"
       >
-        <h2> Competition Schedule </h2>
+        <h2 id="competition-schedule"> Competition Schedule </h2>
         <img
           src="images/2022/comp_schedule2022.png"
           alt="North America Schedule"
